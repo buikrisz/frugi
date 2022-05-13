@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import apiKey from '../../emailkey';
+import emailjs from '@emailjs/browser';
 
-function ContactForm({ setFormSubmitted, formData, setFormData }) {
+function ContactForm({ formSubmitted, setFormSubmitted, formData, setFormData, setMailSent, setAnimationStarted }) {
     function handleChange(e) {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
+
+    useEffect(
+        () => {
+            if (formSubmitted) {
+                setAnimationStarted(true);
+                emailjs.send(apiKey.SERVICE_ID, apiKey.SERVICE_REQUEST_TEMPLATE_ID, 
+                    { from_name: formData.contactName, from_phone: formData.contactPhone, from_email: formData.contactMail, from_service: formData.contactService, from_message: formData.contactMessage },
+                    apiKey.PUBLIC_KEY)
+                .then(res => {
+                    console.log('Email sent');
+                    setMailSent(true);
+                })
+                .catch(err => {
+                    console.log(err);
+                })
+            }
+        },
+        [formSubmitted]
+    )
 
     return (
         <form onSubmit={(e) => {
@@ -18,7 +39,7 @@ function ContactForm({ setFormSubmitted, formData, setFormData }) {
             <div>
                 <input type="text" name="contactMail" id="contactMail" placeholder='E-mail' value={formData.contactMail} onChange={handleChange} required />
                 <select name="contactService" id="contactService" defaultValue="" className={formData.contactService === "" ? "unselected" : "selected"} onChange={handleChange}>
-                    <option value="" disabled hidden>Válasszon szolgáltatást...</option>
+                    <option value="" disabled hidden>Szolgáltatások...</option>
                     <option value="agyipoloskairtas">Ágyi poloska irtás</option>
                     <option value="csotanyirtas">Csótányirtás</option>
                     <option value="ragcsaloirtas">Rágcsáló irtás</option>

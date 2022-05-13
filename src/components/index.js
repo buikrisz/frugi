@@ -15,7 +15,6 @@ export { default as Pdfs } from './Pdfs/Pdfs';
 export { default as ContactForm } from './ContactForm/ContactForm';
 export { default as ContactInfoCard } from './ContactInfoCard/ContactInfoCard';
 export { default as ContactSection } from './ContactSection/ContactSection';
-export { default as ContactServicesCard } from './ContactServicesCard/ContactServicesCard';
 
 //Ozone
 export { default as OzoneLandingSection } from './OzoneLandingSection/OzoneLandingSection';
