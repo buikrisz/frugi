@@ -1,0 +1,256 @@
+#contactSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    color: #010252;
+}
+
+#contactSection .contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+
+#contactSection .contactInfo .title {
+    text-transform: uppercase;
+    color: #010252;
+}
+
+#contactSection .contactInfo .contactInfoCards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#contactSection .contactInfo .contactInfoCard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    width: 350px;
+    box-shadow: 2px 2px 10px 5px rgb(200, 200, 200);
+    border-radius: 20px;
+}
+
+#contactSection .contactInfo .contactInfoCard .icon {
+    height: 60px;
+    width: 60px;
+    color: #34b74a;
+}
+
+#contactSection .contactInfo .contactInfoCard h3 {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+#contactSection .contactInfo .contactInfoCard h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#contactSection .formInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-image: url("../../images/contact_bg.jpg");
+    background-size: cover;
+}
+
+#contactSection .formInfo .servicesCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    height: 50vh;
+    width: 20%;
+}
+
+#contactSection .formInfo .servicesCard h3 {
+    padding: 10px 20px;
+}
+
+#contactSection .formInfo .servicesCard h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 5px #c8c8c8;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#contactSection .formInfo .servicesCard h5:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px #010252;
+}
+
+#contactSection .formInfo form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 60vh;
+    width: 40%;
+}
+
+#contactSection .formInfo form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#contactSection .formInfo form input, #contactSection form textarea, #contactSection .formInfo form select {
+    background-color: #fff;
+    padding-left: 20px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#contactSection .formInfo form input {
+    height: 60px;
+    width: 350px;
+}
+
+#contactSection .formInfo form select {
+    height: 60px;
+    width: 350px;
+    cursor: pointer;
+}
+
+#contactSection .formInfo form select.selected {
+    color: #010252;
+}
+
+#contactSection .formInfo form select.unselected {
+    color: #c0c1c1;
+}
+
+#contactSection .formInfo form textarea {
+    height: 120px;
+    width: 720px;
+    padding-top: 20px;
+}
+
+#contactSection .formInfo form input::placeholder, #contactSection form textarea::placeholder {
+    opacity: 0.5;
+}
+
+#contactSection .formInfo form button {
+    background-color: #34b74a;
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#contactSection .formInfo form button:hover {
+    background-color: #308f3f;
+}
+
+#contactSection .formInfo form .confirmationTxt {
+    text-align: center;
+}
+
+@media (max-width: 1280px) {  
+    #contactSection .contactInfo .contactInfoCard {
+        width: 250px;
+    }
+    
+    #contactSection .contactInfo .contactInfoCard .icon {
+        height: 40px;
+        width: 40px;
+    }
+    
+    #contactSection .contactInfo .contactInfoCard h3 {
+        font-size: 18px;
+    }
+    
+    #contactSection .contactInfo .contactInfoCard h5 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 820px) {  
+    
+    #contactSection {
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    #contactSection .contactInfo {
+        gap: 30px;
+        height: unset;
+    }
+
+    #contactSection .contactInfo .contactInfoCards {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    #contactSection .contactInfo .contactInfoCard div {
+        width: 150px;
+    }
+
+    #contactSection .contactInfo .contactInfoCard {
+        height: 80px;
+        width: 220px;
+    }
+    
+    #contactSection .contactInfo .contactInfoCard .icon {
+        height: 35px;
+        width: 35px;
+    }
+    
+    #contactSection .contactInfo .contactInfoCard h3 {
+        font-size: 14px;
+    }
+    
+    #contactSection .contactInfo .contactInfoCard h5 {
+        font-size: 10px;
+    }
+
+    #contactSection .formInfo form {
+        height: unset;
+    }
+    
+    #contactSection .formInfo form h2 {
+        text-align: center;
+    }
+    
+    #contactSection .formInfo form div{
+        gap: 15px;
+    }
+
+    #contactSection .formInfo form input, #contactSection form textarea, #contactSection .formInfo form select {
+        font-size: 16px;
+    }
+    
+    #contactSection .formInfo form input, #contactSection .formInfo form select {
+        height: 50px;
+        width: 155px;
+    }
+    
+    #contactSection .formInfo form textarea {
+        height: 100px;
+        width: 325px;
+    }
+}

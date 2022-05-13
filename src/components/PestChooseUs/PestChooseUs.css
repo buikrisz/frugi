@@ -1,0 +1,213 @@
+#chooseUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    color: #010252;
+}
+
+#chooseUs .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+
+#chooseUs .content .contentSeparator {
+    position: relative;
+}
+
+#chooseUs .content .contentSeparator.leftContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chooseUs .content .contentSeparator button {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    box-shadow: 0 0 5px 2px rgb(200, 200, 200);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+#chooseUs .content .contentSeparator button:hover {
+    cursor: pointer;
+}
+
+#chooseUs .content .contentSeparator button .icon {
+    height: 30px;
+    width: 30px;
+    color: #34b74a;
+}
+
+#chooseUs .content .contentSeparator .left {
+    top: 30%;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+#chooseUs .content .contentSeparator .left:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+#chooseUs .content .contentSeparator .right {
+    bottom: 30%;
+    right: 0;
+    transform: translateX(50%);
+}
+
+#chooseUs .content .contentSeparator .right:hover {
+    transform: translateX(50%) scale(1.05);
+}
+
+#chooseUs .content .contentSeparator .aboutUs {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+}
+
+#chooseUs .content .rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    width: 600px;
+}
+
+#chooseUs .content .rightContent h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#chooseUs .content .rightContent h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#chooseUs .content .rightContent div {
+    display: flex;
+    gap: 20px;
+    width: 400px;
+}
+
+#chooseUs .content .rightContent div .check {
+    height: 50px;
+    width: 50px;
+    color: #34b74a;
+}
+
+#chooseUs .content .rightContent div h4 {
+    font-weight: 400;
+}
+
+@media (max-width: 1700px) {  
+    
+    #chooseUs .content {
+        gap: 80px;
+    }
+
+    #chooseUs .content .contentSeparator .left {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #chooseUs .content .contentSeparator .right {
+        bottom: 10%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 1280px) {  
+    #chooseUs .content {
+        flex-direction: column;
+        gap: 40px;
+        height: unset;
+    }
+
+    #chooseUs .content .contentSeparator .aboutUs {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 820px) {  
+    #chooseUs .content .contentSeparator .aboutUs {
+        height: auto;
+        width: 80%;
+    }
+
+    #chooseUs .content .contentSeparator button {
+        font-size: 15px;
+    }
+
+    #chooseUs .content .contentSeparator .left {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #chooseUs .content .contentSeparator .right {
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    #chooseUs .content .rightContent {
+        width: 80%;
+    }
+    
+    #chooseUs .content .rightContent h2 {
+        width: unset;
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    #chooseUs .content .rightContent h3 {
+        width: 90%;
+        align-self: center;
+        font-size: 18px;
+    }
+    
+    #chooseUs .content .rightContent div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {  
+    #chooseUs .content .contentSeparator .aboutUs {
+        height: 250px;
+        width: 250px;
+    }
+
+    #chooseUs .content .contentSeparator button {
+        font-size: 11px;
+    }
+
+    #chooseUs .content .rightContent {
+        width: 325px;
+    }
+    
+    #chooseUs .content .rightContent h2 {
+        font-size: 28px;
+    }
+    
+    #chooseUs .content .rightContent h3 {
+        width: 250px;
+    }
+    
+    #chooseUs .content .rightContent div {
+        width: 325px;
+    }
+}

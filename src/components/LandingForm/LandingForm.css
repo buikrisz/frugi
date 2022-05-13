@@ -1,0 +1,88 @@
+.landingContent .landingForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    height: 600px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(200, 200, 200);
+}
+
+.landingContent .landingForm h2 {
+    width: 100%;
+    font-size: 25px;
+    color: #010252;
+    text-align: center;
+}
+
+.landingContent .landingForm input {
+    height: 60px;
+    width: 80%;
+    padding-left: 20px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+}
+
+.landingContent .landingForm input::placeholder {
+    color: rgb(200, 200, 200);
+}
+
+.landingContent .landingForm button {
+    background-color: #34b74a;
+    height: 60px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.landingContent .landingForm button:hover {
+    background-color: #308f3f;
+}
+
+@media (max-width: 820px) {  
+    
+    .landingContent .landingForm {
+        width: 80%;
+    }
+    
+    .landingContent .landingForm h2 {
+        font-size: 24px;
+    }
+
+    .landingContent .landingForm input {
+        height: 60px;
+        font-size: 16px;
+    }
+    
+    .landingContent .landingForm button {
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {  
+    
+    .landingContent .landingForm {
+        width: 325px;
+        margin-bottom: 10px;
+    }
+    
+    .landingContent .landingForm h2 {
+        font-size: 20px;
+    }
+
+    .landingContent .landingForm input {
+        height: 50px;
+        font-size: 14px;
+    }
+    
+    .landingContent .landingForm button {
+        height: 50px;
+        font-size: 14px;
+    }
+}

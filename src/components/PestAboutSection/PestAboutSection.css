@@ -1,0 +1,17 @@
+#aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#aboutSection .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100px;
+    text-transform: uppercase;
+    color: #010252;
+}
