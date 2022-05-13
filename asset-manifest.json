@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/frugi/static/css/main.90adf9a0.css",
+    "main.js": "/frugi/static/js/main.08421a41.js",
+    "static/media/pest_control.png": "/frugi/static/media/pest_control.fdecce88d2d756d7cd74.png",
+    "static/media/Poppins-Light.ttf": "/frugi/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Regular.ttf": "/frugi/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Bold.ttf": "/frugi/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/service_bg.jpg": "/frugi/static/media/service_bg.e146976823efc8329b8c.jpg",
+    "static/media/landing_bg.jpg": "/frugi/static/media/landing_bg.7df4805c9b6ea087b4c6.jpg",
+    "static/media/contact_bg.jpg": "/frugi/static/media/contact_bg.29c8b57b35339e58ecbb.jpg",
+    "static/media/placeholder.png": "/frugi/static/media/placeholder.7d6861434cf0ebc3fcaa.png",
+    "static/media/moly.JPG": "/frugi/static/media/moly.2ed51a9eb3e5c0fff7cc.JPG",
+    "static/media/ragcsalo.JPG": "/frugi/static/media/ragcsalo.dd185e4e682444db22d0.JPG",
+    "static/media/csotany.JPG": "/frugi/static/media/csotany.366167fbcf2787c04113.JPG",
+    "static/media/poloska.JPG": "/frugi/static/media/poloska.21e2ead827f4d9bd0544.JPG",
+    "static/media/legy.JPG": "/frugi/static/media/legy.4c9dc2076a44d0d4fd7a.JPG",
+    "static/media/hangya.JPG": "/frugi/static/media/hangya.51f5be86dd62daaf2308.JPG",
+    "index.html": "/frugi/index.html",
+    "main.90adf9a0.css.map": "/frugi/static/css/main.90adf9a0.css.map",
+    "main.08421a41.js.map": "/frugi/static/js/main.08421a41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90adf9a0.css",
+    "static/js/main.08421a41.js"
+  ]
+}
