@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frugi/static/css/main.d44458e3.css",
+    "main.css": "/frugi/static/css/main.6003711d.css",
     "main.js": "/frugi/static/js/main.4ae93294.js",
     "static/media/BIOPREN-csotanyirto-gel_hu.pdf": "/frugi/static/media/BIOPREN-csotanyirto-gel_hu.df95a726c51a3e15e26a.pdf",
     "static/media/BIOPREN-hangyairto-gel_hu.pdf": "/frugi/static/media/BIOPREN-hangyairto-gel_hu.04501361852c4b0bd5eb.pdf",
@@ -23,11 +23,11 @@
     "static/media/legy.JPG": "/frugi/static/media/legy.4c9dc2076a44d0d4fd7a.JPG",
     "static/media/hangya.JPG": "/frugi/static/media/hangya.51f5be86dd62daaf2308.JPG",
     "index.html": "/frugi/index.html",
-    "main.d44458e3.css.map": "/frugi/static/css/main.d44458e3.css.map",
+    "main.6003711d.css.map": "/frugi/static/css/main.6003711d.css.map",
     "main.4ae93294.js.map": "/frugi/static/js/main.4ae93294.js.map"
   },
   "entrypoints": [
-    "static/css/main.d44458e3.css",
+    "static/css/main.6003711d.css",
     "static/js/main.4ae93294.js"
   ]
 }
