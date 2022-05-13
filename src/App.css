@@ -57,6 +57,7 @@ ol, ul, li {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
     bottom: 10px;
     left: 10px;
     height: 60px;
