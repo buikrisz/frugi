@@ -15,14 +15,12 @@ function Header() {
             <div>
                 <NavLink to="/" className={({ isActive }) => isActive ? "links selected" : "links"}>
                     <h4 onClick={(e) => {
-                        console.log(e.target);
                         setSelectedSite("pest");
                     }}>Rovarírtás</h4>
                 </NavLink>
                 <span>|</span>
                 <NavLink to="/ozone" className={({ isActive }) => isActive ? "links selected" : "links"}>
                     <h4  onClick={(e) => {
-                        console.log(e.target);
                         setSelectedSite("ozone");
                     }}>Ózonos fertőtlenítés</h4>
                 </NavLink>

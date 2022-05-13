@@ -9,6 +9,7 @@ export { default as PestChooseUs } from './PestChooseUs/PestChooseUs';
 export { default as PestServiceCard } from './PestServiceCard/PestServiceCard';
 export { default as PestServiceDetails } from './PestServiceDetails/PestServiceDetails';
 export { default as PestServices } from './PestServices/PestServices';
+export { default as Pdfs } from './Pdfs/Pdfs';
 
 //Contact
 export { default as ContactForm } from './ContactForm/ContactForm';
