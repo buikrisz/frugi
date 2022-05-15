@@ -6,7 +6,7 @@ import placeholder from '../../images/placeholder.png';
 
 function ChooseUs() {
     return (
-        <div id='chooseUs'>
+        <div id='rolunk'>
             <h3 className='title'>Miért minket válasszon?</h3>
             <div className='content'>
                 <div className='contentSeparator leftContent'>

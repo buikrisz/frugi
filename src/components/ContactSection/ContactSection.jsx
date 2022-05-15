@@ -12,7 +12,7 @@ function ContactSection() {
     const [animationStarted, setAnimationStarted] = useState(false);
 
     return (
-        <section id='contactSection'>
+        <section id='kapcsolat'>
             <div className='contactInfo'>
                 <h3 className='title'>Kapcsolat</h3>
                 <div className='contactInfoCards'>

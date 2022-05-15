@@ -29,10 +29,10 @@ function Header() {
                 {
                     // different routes
                     <ul>
-                        <a href="#landingSection"><li>Kezdőlap</li></a>
-                        <a href="#chooseUs"><li>Rólunk</li></a>
-                        <a href="#services"><li>Szolgáltatások</li></a>
-                        <a href="#contactSection"><li>Kapcsolat</li></a>
+                        <a href="#kezdolap"><li>Kezdőlap</li></a>
+                        <a href="#rolunk"><li>Rólunk</li></a>
+                        <a href="#szolgaltatasok"><li>Szolgáltatások</li></a>
+                        <a href="#kapcsolat"><li>Kapcsolat</li></a>
                     </ul>
                 }
             </nav>
