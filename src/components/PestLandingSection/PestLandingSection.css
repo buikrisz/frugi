@@ -15,19 +15,33 @@
     height: calc(100vh - 180px);
 }
 
-#kezdolap .landingContent div {
+#kezdolap .landingContent .landingTextImg {
     display: flex;
     align-items: center;
 }
 
-#kezdolap .landingContent div img {
+#kezdolap .landingContent .landingTextImg img {
     height: 300px;
     width: 300px;
 }
 
-.landingContent h2 {
+#kezdolap .landingContent .landingTextImg .landingText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#kezdolap .landingContent .landingTextImg .landingText .landingTitle {
     width: 750px;
-    font-size: 70px;
+    font-size: 55px;
+}
+
+#kezdolap .landingContent .landingTextImg .landingText .landingSubtitle {
+    width: 750px;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
 }
 
 @media (max-width: 1700px) {  
@@ -35,8 +49,9 @@
         padding-top: 80px;
     }
 
-    #kezdolap .landingContent div {
+    #kezdolap .landingContent .landingTextImg {
         flex-direction: column;
+        gap: 40px;
     }
 
 }
@@ -52,16 +67,12 @@
         height: unset;
     }
 
-    #kezdolap .landingContent div {
+    #kezdolap .landingContent .landingTextImg {
         text-align: center;
         gap: 10px;
     }
 
-    .landingContent h2 {
-        font-size: 50px;
-    }
-
-    #kezdolap .landingContent div img {
+    #kezdolap .landingContent .landingTextImg img {
         height: 200px;
         width: 200px;
     }
@@ -78,10 +89,17 @@
         gap: 50px;
     }
 
-    .landingContent h2 {
+    #kezdolap .landingContent .landingTextImg .landingText .landingTitle, #kezdolap .landingContent .landingTextImg .landingText .landingSubtitle {
         text-align: center;
         width: 80%;
-        font-size: 26px;
+    }
+
+    #kezdolap .landingContent .landingTextImg .landingText .landingTitle {
+        font-size: 35px;
+    }
+
+    #kezdolap .landingContent .landingTextImg .landingText .landingSubtitle {
+        font-size: 18px;
     }
 }
 
@@ -101,13 +119,15 @@
         gap: 20px;
     }
 
-    .landingContent h2 {
-        text-align: center;
-        width: 325px;
+    #kezdolap .landingContent .landingTextImg .landingText .landingTitle {
         font-size: 22px;
     }
+
+    #kezdolap .landingContent .landingTextImg .landingText .landingSubtitle {
+        font-size: 14px;
+    }
     
-    #kezdolap .landingContent div img {
+    #kezdolap .landingContent .landingTextImg img {
         height: 120px;
         width: 120px;
     }
