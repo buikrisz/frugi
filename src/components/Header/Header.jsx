@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import { IoLocationOutline } from 'react-icons/io5';
+import { BsBug } from 'react-icons/bs';
 import { NavLink } from 'react-router-dom';
 
 function Header() {
@@ -9,8 +10,8 @@ function Header() {
     return (
         <header>
             <div className='headerLocation'>
-                <IoLocationOutline className='locationIcon'/>
-                <h4>Dunakeszi, Magyarország</h4>
+                <BsBug className='locationIcon'/>
+                <h4>?Frugi-Cont Kft.?</h4>
             </div>
             <div>
                 <NavLink to="/" className={({ isActive }) => isActive ? "links selected" : "links"}>

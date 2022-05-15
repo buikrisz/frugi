@@ -78,6 +78,11 @@ ol, ul, li {
     color: #010252;
 }
 
+/*Docoments page*/
+.documentsContent {
+    padding-top: 100px;
+}
+
 /*Form submit animation*/
 
 .loader {

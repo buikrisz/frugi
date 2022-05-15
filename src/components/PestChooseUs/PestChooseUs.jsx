@@ -1,9 +1,11 @@
 import React from 'react';
 import './PestChooseUs.css';
+import { Link } from 'react-router-dom';
 import { HiPlusCircle } from 'react-icons/hi';
 import { BsCheck2Circle } from 'react-icons/bs';
 import placeholder from '../../images/placeholder.png';
 import about_us from '../../images/about_us.jpg';
+import Documents from '../../containers/Documents';
 
 function ChooseUs() {
     return (
@@ -22,15 +24,15 @@ function ChooseUs() {
                     </button>
                 </div>
                 <div className='contentSeparator rightContent'>
-                    <h2>??Frugi-Cont kártevőírtó akármi??</h2>
-                    <h3>Legjobb minőségi szolgáltatásokat biztosítjuk kártevő problémáira!</h3>
+                    <h2>Frugi-Cont Kft - Kártevőirtás</h2>
+                    <h3>Legjobb minőségű szolgáltatásokat biztosítjuk kártevő problémáira!</h3>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />
                         <h4>Figyelembe vesszük ügyfeleink biztonságát és elégedettségét</h4>
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />  
-                        <h4>Hatékony, környezetbarát?? szereket használunk a rovarírtáshoz</h4>
+                        <h4>Hatékony, környezetbarát szereket használunk a rovarírtáshoz, melyeknek biztonsági dokumentumait <Link to="/dokumentumok" className='linkToDocs'>itt</Link> találhatják meg</h4>
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />
@@ -38,7 +40,7 @@ function ChooseUs() {
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />
-                        <h4>Kiemelt figyelmet biztosítunk visszatérő vendégeink számára</h4>
+                        <h4>Magánszemélyek megrendelésein felül vendéglátóhelyek, szálláshelyek, irodák, raktárak, csarnokok és ipartelepek kezelését is vállaljuk</h4>
                     </div>
                 </div>
             </div>

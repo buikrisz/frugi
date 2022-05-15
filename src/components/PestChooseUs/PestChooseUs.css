@@ -98,16 +98,23 @@
 #rolunk .content .rightContent div {
     display: flex;
     gap: 20px;
-    width: 400px;
+    width: 100%;
 }
 
 #rolunk .content .rightContent div .check {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     color: #34b74a;
 }
 
+#rolunk .content .rightContent div .linkToDocs {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0000EE;
+}
+
 #rolunk .content .rightContent div h4 {
+    width: 90%;
     font-weight: 400;
 }
 
