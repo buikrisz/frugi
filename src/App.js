@@ -5,7 +5,7 @@ import { PestControl, Ozone, Ozone_temp, Documents } from './containers';
 
 function App() {
     return (
-        <BrowserRouter basename={"/frugi"}>
+        <BrowserRouter basename="/">
             <Routes>
                 <Route path="/" element={ <PestControl /> }/>
                 <Route path="/ozone" element={ <Ozone_temp /> }/>
