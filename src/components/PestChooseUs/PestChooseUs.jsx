@@ -22,7 +22,7 @@ function ChooseUs() {
                     </button>
                 </div>
                 <div className='contentSeparator rightContent'>
-                    <h2>Frugi-Cont Kft - Kártevőirtás</h2>
+                    <h2>FrugiOzone Kártevőirtás</h2>
                     <h3>Legjobb minőségű szolgáltatásokat biztosítjuk kártevő problémáira!</h3>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />
