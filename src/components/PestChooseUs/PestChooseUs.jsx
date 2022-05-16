@@ -3,9 +3,7 @@ import './PestChooseUs.css';
 import { Link } from 'react-router-dom';
 import { HiPlusCircle } from 'react-icons/hi';
 import { BsCheck2Circle } from 'react-icons/bs';
-import placeholder from '../../images/placeholder.png';
 import about_us from '../../images/about_us.jpg';
-import Documents from '../../containers/Documents';
 
 function ChooseUs() {
     return (
@@ -20,7 +18,7 @@ function ChooseUs() {
                     <img src={about_us} alt="About us" className='aboutUs' />
                     <button className='right'>
                         <HiPlusCircle className='icon' />
-                        <h4>?Kiemelkedő szolgáltatás?</h4>
+                        <h4>Kiemelkedő szolgáltatás</h4>
                     </button>
                 </div>
                 <div className='contentSeparator rightContent'>

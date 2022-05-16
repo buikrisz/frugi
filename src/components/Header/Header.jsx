@@ -11,7 +11,7 @@ function Header() {
         <header>
             <div className='headerLocation'>
                 <BsBug className='bugIcon'/>
-                <h4>?Frugi-Cont Kft.?</h4>
+                <h4>Frugi-Ozone Kártevőirtás</h4>
             </div>
             <div>
                 <NavLink to="/" className={({ isActive }) => isActive ? "links selected" : "links"}>

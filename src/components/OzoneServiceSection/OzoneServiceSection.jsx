@@ -1,13 +1,16 @@
 import React from 'react';
 import './OzoneServiceSection.css';
 import { BsCheck2Circle } from 'react-icons/bs';
+import bakterium from '../../images/bacteria.png';
+import levego from '../../images/fresh.png';
+import szaglas from '../../images/smell.png';
 
 function OzoneServiceSection() {
     return (
         <section id='whyOzoneSection'>
             <h3 className='title'>Miért minket válasszon?</h3>
             <div className="advantageCard">
-                <img src="./frugi-cont/images/bacteria.png" alt="Bacteria" />
+                <img src={bakterium} alt="Bacteria" />
                 <div className='listItems'>
                     <div className='listItem'>
                         <BsCheck2Circle className='check' />
@@ -24,7 +27,7 @@ function OzoneServiceSection() {
                 </div>
             </div>
             <div className="advantageCard">
-                <img src="./frugi-cont/images/fresh.png" alt="Bacteria" />
+                <img src={levego} alt="Bacteria" />
                 <div className='listItems'>
                     <div className='listItem'>
                         <BsCheck2Circle className='check' />
@@ -41,7 +44,7 @@ function OzoneServiceSection() {
                 </div>
             </div>
             <div className="advantageCard">
-                <img src="./frugi-cont/images/smell.png" alt="Bacteria" />
+                <img src={szaglas} alt="Bacteria" />
                 <div className='listItems'>
                     <div className='listItem'>
                         <BsCheck2Circle className='check' />

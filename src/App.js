@@ -8,7 +8,7 @@ function App() {
         <BrowserRouter basename="/frugi">
             <Routes>
                 <Route path="/" element={ <PestControl /> }/>
-                <Route path="/ozone" element={ <Ozone_temp /> }/>
+                <Route path="/ozone" element={ <Ozone /> }/>
                 <Route path="/dokumentumok" element={ <Documents /> }/>
             </Routes>
         </BrowserRouter>
