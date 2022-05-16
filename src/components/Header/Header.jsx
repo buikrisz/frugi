@@ -10,7 +10,7 @@ function Header() {
     return (
         <header>
             <div className='headerLocation'>
-                <BsBug className='locationIcon'/>
+                <BsBug className='bugIcon'/>
                 <h4>?Frugi-Cont Kft.?</h4>
             </div>
             <div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactSection, Header } from '../components';
+import { ContactSection, Footer, Header } from '../components';
 
 function Layout({ children }) {
   return (
@@ -7,6 +7,7 @@ function Layout({ children }) {
         <Header />
         {children}
         <ContactSection />
+        <Footer />
     </main>
   )
 }

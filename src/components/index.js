@@ -2,6 +2,7 @@
 export { default as LandingForm } from './LandingForm/LandingForm';
 export { default as Header } from './Header/Header';
 export { default as HeaderSubPage } from './HeaderSubPage/HeaderSubPage';
+export { default as Footer } from './Footer/Footer';
 
 //Pest
 export { default as PestLandingSection } from './PestLandingSection/PestLandingSection';

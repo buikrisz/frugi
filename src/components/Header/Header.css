@@ -47,9 +47,9 @@ header div .links.selected {
     border-radius: 10px;
 }
 
-header div .locationIcon {
-    height: 30px;
-    width: 30px;
+header div .bugIcon {
+    height: 25px;
+    width: 25px;
     color: #fff;
 }
 

@@ -4,10 +4,10 @@ import './PestServiceCard.css';
 function ServiceCard({ id, img, title, setShowDetails }) {
 
 	return (
-		<div className='serviceCard'>
+		<div className='serviceCard' onClick={() => setShowDetails({ show: true, id })}>
 			<img src={img} alt={img} />
 			<h4>{title}</h4>
-			<button onClick={() => setShowDetails({ show: true, id })}>Több</button>
+			<button>Több</button>
 		</div>
 	)
   }
