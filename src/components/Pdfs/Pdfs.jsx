@@ -23,7 +23,7 @@ function Pdfs({ setShowPdfs }) {
             </div>
             <div>
                 <MdFileDownload className='pdfIcon' />
-                <a href={gohkilaht} download="Gokilaht_10MC_rovarirto_koncentratum_hu_v1">Gokilaht 10MC rovarirtó koncentratum</a>
+                <a href={gohkilaht} download="Gokilaht_10MC_rovarirto_koncentratum_hu_v1">Gokilaht 10MC rovarirtó koncentrátum</a>
             </div>
             <div>
                 <MdFileDownload className='pdfIcon' />

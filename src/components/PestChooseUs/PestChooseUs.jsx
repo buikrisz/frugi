@@ -31,7 +31,7 @@ function ChooseUs() {
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />  
-                        <h4>Hatékony, környezetbarát szereket használunk a rovarírtáshoz, melyeknek biztonsági dokumentumait a bal alsó sarokban lévő ikonra kattintva találhatják meg</h4>
+                        <h4>Hatékony, környezetbarát szereket használunk a rovarírtáshoz, melyeknek biztonsági adatlapjait <a href="/dokumentumok.html" className='linkToDocs'>itt</a> találhatják meg</h4>
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />
