@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://buikrisz.github.io/frugi/static/css/main.f8249060.css",
-    "main.js": "https://buikrisz.github.io/frugi/static/js/main.257e6cad.js",
+    "main.js": "https://buikrisz.github.io/frugi/static/js/main.8c6c2607.js",
     "static/media/about_us.jpg": "https://buikrisz.github.io/frugi/static/media/about_us.994aa7f42a88f86fbf21.jpg",
     "static/media/BIOPREN-csotanyirto-gel_hu.pdf": "https://buikrisz.github.io/frugi/static/media/BIOPREN-csotanyirto-gel_hu.df95a726c51a3e15e26a.pdf",
     "static/media/BIOPREN-hangyairto-gel_hu.pdf": "https://buikrisz.github.io/frugi/static/media/BIOPREN-hangyairto-gel_hu.04501361852c4b0bd5eb.pdf",
@@ -27,10 +27,10 @@
     "static/media/bacteria.png": "https://buikrisz.github.io/frugi/static/media/bacteria.e5b9a664d7787d1e0489.png",
     "index.html": "https://buikrisz.github.io/frugi/index.html",
     "main.f8249060.css.map": "https://buikrisz.github.io/frugi/static/css/main.f8249060.css.map",
-    "main.257e6cad.js.map": "https://buikrisz.github.io/frugi/static/js/main.257e6cad.js.map"
+    "main.8c6c2607.js.map": "https://buikrisz.github.io/frugi/static/js/main.8c6c2607.js.map"
   },
   "entrypoints": [
     "static/css/main.f8249060.css",
-    "static/js/main.257e6cad.js"
+    "static/js/main.8c6c2607.js"
   ]
 }
