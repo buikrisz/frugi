@@ -1,31 +1,11 @@
-#ozoneLandingSection {
+/* #ozoneLandingSection {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-image: url("../../images/landing_bg.jpg");
     width: 100%;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
     color: #010252;
-}
-
-#ozoneLandingSection nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    padding: 0 100px;
-}
-
-#ozoneLandingSection nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    font-weight: 700;
-}
-
-#ozoneLandingSection nav ul li:hover {
-    color: #9f9fc7;
 }
 
 #ozoneLandingSection .landingContent {
@@ -44,11 +24,6 @@
     height: 300px;
     width: 300px;
 }
-
-/* .landingContent h2 {
-    width: 750px;
-    font-size: 70px;
-} */
 
 @media (max-width: 1700px) {  
     
@@ -122,4 +97,4 @@
         height: 120px;
         width: 120px;
     }
-}
+} */

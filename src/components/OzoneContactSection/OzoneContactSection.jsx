@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import './ContactSection.css';
 import { ContactForm, ContactInfoCard } from '..';
 
 function ContactSection() {
     const [formData, setFormData] = useState(
-        { contactName: "", contactPhone: "", contactMail: "", contactService: "", contactMessage: "", contactPrivacyPolicy: false }
+        { contactName: "", contactPhone: "", contactMail: "", contactService: "", contactMessage: "" }
     )
 
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -24,7 +23,7 @@ function ContactSection() {
             <div className='formInfo'>
                 {
                 (!mailSent && !animationStarted) ? 
-                    <ContactForm formSubmitted={formSubmitted} setFormSubmitted={setFormSubmitted} formData={formData} setFormData={setFormData} setMailSent={setMailSent} setAnimationStarted={setAnimationStarted} />
+                    <ContactForm formSubmitted={formSubmitted} setFormSubmitted={setFormSubmitted} formData={formData} setFormData={setFormData} setMailSent={setMailSent} setAnimationStarted={setAnimationStarted} selectedSite="ozone" />
                 : (!mailSent && animationStarted) ?
                     <form className='contactForm'>
                         <svg className="loader" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">

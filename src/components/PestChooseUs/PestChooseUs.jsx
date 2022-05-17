@@ -1,11 +1,9 @@
 import React from 'react';
 import './PestChooseUs.css';
-import { Link } from 'react-router-dom';
 import { HiPlusCircle } from 'react-icons/hi';
 import { BsCheck2Circle } from 'react-icons/bs';
 import about_us from '../../images/about_us.jpg';
-{/* <Link to="/dokumentumok" className='linkToDocs'>itt</Link>
- */}
+
 function ChooseUs() {
     return (
         <div id='rolunk'>

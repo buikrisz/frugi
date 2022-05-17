@@ -5,13 +5,13 @@ import emailjs from '@emailjs/browser';
 
 function LandingForm() {
     const [formValue, setFormValue] = useState(
-        { name: "", phone: "", service: "", location: "" }
+        { name: "", phone: "", service: "", location: "", privacyPolicy: false }
     )
 
     function handleChange(e) {
-        const { name, value } = e.target;
+        const { name, value, type, checked } = e.target;
         setFormValue(
-            { ...formValue, [name]: value }
+            { ...formValue, [name]: type === "checkbox" ? checked : value }
         )
     }
 
@@ -50,7 +50,7 @@ function LandingForm() {
                 <input type="text" name="service" id="service" placeholder="Melyik szolgáltatás érdekli?" value={formValue.service} onChange={handleChange} />
                 <input type="text" name="location" id="location" placeholder="Melyik város / kerület?" value={formValue.location} onChange={handleChange} required />
                 <div className='landingFormCheckbox'>
-                    <input type="checkbox" name="privacyPolicy" id="privacyPolicy" />
+                    <input type="checkbox" name="privacyPolicy" id="privacyPolicy" checked={formValue.privacyPolicy} onChange={handleChange} required />
                     <label htmlFor="privacyPolicy">Elfogadom az adatvédelmi nyilatkozatot.</label>
                 </div>
                 <button>Visszahívást kérek!</button>

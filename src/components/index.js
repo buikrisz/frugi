@@ -21,3 +21,4 @@ export { default as ContactSection } from './ContactSection/ContactSection';
 //Ozone
 export { default as OzoneLandingSection } from './OzoneLandingSection/OzoneLandingSection';
 export { default as OzoneServiceSection } from './OzoneServiceSection/OzoneServiceSection';
+export { default as OzoneContactSection } from './OzoneContactSection/OzoneContactSection';

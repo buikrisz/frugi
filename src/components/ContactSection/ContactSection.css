@@ -104,7 +104,7 @@
     align-items: center;
     gap: 30px;
     height: 60vh;
-    width: 40%;
+    width: fit-content;
 }
 
 #kapcsolat .formInfo form div{
@@ -142,6 +142,23 @@
     height: 120px;
     width: 720px;
     padding-top: 20px;
+}
+
+#kapcsolat .formInfo form .contactFormCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+}
+
+#kapcsolat .formInfo form .contactFormCheckbox input {
+    height: 20px;
+    width: 20px;
+    padding-left: unset;
+}
+
+#kapcsolat .formInfo form .contactFormCheckbox label {
+    font-size: 16px;
 }
 
 #kapcsolat .formInfo form input::placeholder, #kapcsolat form textarea::placeholder {
@@ -249,5 +266,9 @@
     #kapcsolat .formInfo form textarea {
         height: 100px;
         width: 325px;
+    }
+
+    #kapcsolat .formInfo form .contactFormCheckbox label {
+        font-size: 13px;
     }
 }

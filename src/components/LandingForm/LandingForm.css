@@ -44,7 +44,6 @@
 
 .landingContent .landingForm .landingFormCheckbox label {
     font-size: 16px;
-    cursor: pointer;
 }
 
 .landingContent .landingForm button {
@@ -81,6 +80,7 @@
         height: 60px;
         font-size: 16px;
     }
+
 }
 
 @media (max-width: 450px) {  
@@ -102,5 +102,9 @@
     .landingContent .landingForm button {
         height: 50px;
         font-size: 14px;
+    }
+    
+    .landingContent .landingForm .landingFormCheckbox label {
+        font-size: 13px;
     }
 }
