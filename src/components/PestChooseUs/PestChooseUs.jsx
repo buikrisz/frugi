@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { HiPlusCircle } from 'react-icons/hi';
 import { BsCheck2Circle } from 'react-icons/bs';
 import about_us from '../../images/about_us.jpg';
-
+{/* <Link to="/dokumentumok" className='linkToDocs'>itt</Link>
+ */}
 function ChooseUs() {
     return (
         <div id='rolunk'>
@@ -30,7 +31,7 @@ function ChooseUs() {
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />  
-                        <h4>Hatékony, környezetbarát szereket használunk a rovarírtáshoz, melyeknek biztonsági dokumentumait <Link to="/dokumentumok" className='linkToDocs'>itt</Link> találhatják meg</h4>
+                        <h4>Hatékony, környezetbarát szereket használunk a rovarírtáshoz, melyeknek biztonsági dokumentumait a bal alsó sarokban lévő ikonra kattintva találhatják meg</h4>
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />

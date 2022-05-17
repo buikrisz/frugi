@@ -49,6 +49,10 @@ function LandingForm() {
                 <input type="text" name="phone" id="phone" placeholder="Telefonszám" value={formValue.phone} onChange={handleChange} required />
                 <input type="text" name="service" id="service" placeholder="Melyik szolgáltatás érdekli?" value={formValue.service} onChange={handleChange} />
                 <input type="text" name="location" id="location" placeholder="Melyik város / kerület?" value={formValue.location} onChange={handleChange} required />
+                <div className='landingFormCheckbox'>
+                    <input type="checkbox" name="privacyPolicy" id="privacyPolicy" />
+                    <label htmlFor="privacyPolicy">Elfogadom az adatvédelmi nyilatkozatot.</label>
+                </div>
                 <button>Visszahívást kérek!</button>
             </form> 
         : (!mailSent && animationStarted) ?

@@ -29,6 +29,24 @@
     color: rgb(200, 200, 200);
 }
 
+.landingContent .landingForm .landingFormCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+}
+
+.landingContent .landingForm .landingFormCheckbox input {
+    height: 20px;
+    width: 20px;
+    padding-left: unset;
+}
+
+.landingContent .landingForm .landingFormCheckbox label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .landingContent .landingForm button {
     background-color: #34b74a;
     height: 60px;
