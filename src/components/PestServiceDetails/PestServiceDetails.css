@@ -62,7 +62,7 @@
 .serviceDetails h6 {
     height: 250px;
     width: 700px;
-    overflow-y: scroll;
+    overflow-y: auto;
     font-size: 18px;
     font-weight: 400;
 }

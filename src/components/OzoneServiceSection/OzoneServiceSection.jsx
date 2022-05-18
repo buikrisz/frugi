@@ -15,16 +15,30 @@ function OzoneServiceSection() {
             <h3 className='title'>Szolgáltatásaink</h3>
             <div className='ozoneServicesContent'>
                 <div className='ozoneServicesCard ozoneServicesSolutions'>
-                    <div>
+                    <div className='ozoneServicesSolutionsContainer'>
                         <img src={ozone_generator} alt="Ózongenerátor" />
-                        <h3>Ózongenerátoros fertőtlenítés</h3>
-                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, adipisci reprehenderit ad hic natus suscipit in exercitationem nulla. Ipsam corporis esse molestiae? Impedit animi ea fugit tempora odit quisquam ullam.</h6>
+                        <div>
+                            <h3>Ózongenerátoros fertőtlenítés</h3>
+                            <h6>Az ózon az egyik legerősebb oxidálószer a világon, kb. 3000-szer hatékonyabb a hatása a
+                                klórénál. Gáz halmazállapota miatt gyakorlatilag bárhova eljut a kezelt területen.<br></br>
+                                <span className='ozoneItalic'>Ez ugyanaz az ózon, mint amiből az ózonpajzs áll a Föld körül?</span><br></br>
+                                Pontosan. Az ózon egy rendkívül instabil molekula, míg a sztratoszféra ózonrétegében a
+                                beeső ultraibolya sugárzás hatására folyamatosan keletkezik és bomlik -így elnyelve a
+                                számunkra káros sugárzást- addig alacsonyabb légköri rétegekben már nem található meg.
+                                Bizonyos folyamatok, például villámlás során is keletkezik ózon.
+                                Az ózongenerátorok ózon termelési elve gyakorlatilag azonos a villámlás során keletkezett
+                                ózon folyamatával, az úgynevezett koronakisülés (más néven csendes kisülés) segítségével
+                                hozzák létre a gázt.
+                            </h6>
+                        </div>
                     </div>
                     <span className='ozoneServicesLine'></span>
-                    <div>
+                    <div className='ozoneServicesSolutionsContainer'>
                         <img src={bakterium} alt="Vegyszer" />
-                        <h3>Vegyszeres fertőtlenítés</h3>
-                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, adipisci reprehenderit ad hic natus suscipit in exercitationem nulla. Ipsam corporis esse molestiae? Impedit animi ea fugit tempora odit quisquam ullam.</h6>
+                        <div>
+                            <h3>Vegyszeres fertőtlenítés</h3>
+                            <h6>Vegyszeres fertőtlenítés esetén professzionális virucid, baktericid szereket használunk a környezeti terhelés minimálisra szorításával. A fertőtlenítésre kérhet permetezéses vagy/és légtérkezeléses eljárást. A pandémiás helyzetben kiemelt figyelmet fordítunk ügyfeleink egészségére.</h6>
+                        </div>
                     </div>
                 </div>
                 <div className='ozoneServicesCard ozoneServicesCustomers'>
@@ -50,57 +64,6 @@ function OzoneServiceSection() {
                     </div>
                 </div>
             </div>
-            {/* <div className="advantageCard">
-                <img src={bakterium} alt="Bacteria" />
-                <div className='listItems'>
-                    <div className='listItem'>
-                        <BsCheck2Circle className='check' />
-                        <h4>Megöli a falakon megtelepedett penészt és gombákat</h4>
-                    </div>
-                    <div className='listItem'>
-                        <BsCheck2Circle className='check' />
-                        <h4>Elpusztítja a baktériumokat és vírusokat</h4>
-                    </div>
-                    <div className='listItem'>
-                        <BsCheck2Circle className='check' />
-                        <h4>Elpusztítja a koronavírust is</h4>
-                    </div>
-                </div>
-            </div>
-            <div className="advantageCard">
-                <img src={levego} alt="Bacteria" />
-                <div className='listItems'>
-                    <div className='listItem'>
-                        <BsCheck2Circle className='check' />
-                        <h4>Pollenmentesít</h4>
-                    </div>
-                    <div className='listItem'>
-                        <BsCheck2Circle className='check' />
-                        <h4>Tiszta, és egészséges levegőt biztosít</h4>
-                    </div>
-                    <div className='listItem'>
-                        <BsCheck2Circle className='check' />
-                        <h4>Lakások, irodák, légkondícionáló eszközök és nagyobb terek tisztítására és fertőtlenítésére is alkalmas</h4>
-                    </div>
-                </div>
-            </div>
-            <div className="advantageCard">
-                <img src={szaglas} alt="Bacteria" />
-                <div className='listItems'>
-                    <div className='listItem'>
-                        <BsCheck2Circle className='check' />
-                        <h4>Megszünteti a kellemetlen szagokat</h4>
-                    </div>
-                    <div className='listItem'>
-                        <BsCheck2Circle className='check' />
-                        <h4>Ajánlott légúti megbetegedéssel / allergiával élők számára</h4>
-                    </div>
-                    <div className='listItem'>
-                        <BsCheck2Circle className='check' />
-                        <h4>Ajánlot dohányzást elhagyók számára</h4>
-                    </div>
-                </div>
-            </div> */}
         </section>
     )
 }
