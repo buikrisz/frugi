@@ -1,15 +1,16 @@
-#whyOzoneSection {
+.ozoneServicesSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-image: url("../../images/contact_bg.jpg");
     min-height: 100vh;
     width: 100%;
     color: #010252;
 }
 
-#whyOzoneSection .title {
+.ozoneServicesSection .title {
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -17,7 +18,178 @@
     text-transform: uppercase;
 }
 
-#whyOzoneSection .advantageCard {
+.ozoneServicesSection .ozoneServicesContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 90%;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 700px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 5px rgb(200, 200, 200);
+    transition: 1s;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 2px #7d7d7d;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesSolutions div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesSolutions div img {
+    height: 50%;
+    width: auto;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesSolutions div h6 {
+    width: 80%;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesSolutions span {
+    width: 100%;
+    border: 1px solid #010252;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    padding: 10px;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div:nth-child(1), .ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div:nth-child(2) {
+    border-right: 2px solid #010252;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div:nth-child(1), .ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div:nth-child(3) {
+    border-bottom: 2px solid #010252;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div img {
+    height: 50%;
+    width: 50%;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div h5 {
+    text-align: center;
+}
+
+.ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div h6 {
+    width: 90%;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 1600px) {
+    
+    .ozoneServicesSection .ozoneServicesContent {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesCard:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+@media (max-width: 820px) {
+    
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesCard {
+        width: 90%;
+        height: 600px;
+        padding: 0;
+    }
+
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesCard:hover {
+        transform: unset;
+    }
+    
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: unset;
+    }
+
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div {
+        height: unset;
+        height: 400px;
+        width: 80%;
+        border-bottom: 2px solid #010252;
+        border-right: unset !important;
+    }
+
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div:nth-child(4) {
+        border-bottom: unset;
+    }
+
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesCustomers div img {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 450px) { 
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesSolutions div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50%;
+    }
+    
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesSolutions div img {
+        height: auto;
+        width: 120px;
+    }
+    
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesSolutions div h3 {
+        text-align: center;
+    }
+    
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesSolutions div h6 {
+        width: 80%;
+    }
+    
+    .ozoneServicesSection .ozoneServicesContent .ozoneServicesSolutions span {
+        width: 100%;
+        border: 1px solid #010252;
+    }
+}
+
+/* .ozoneServicesSection .advantageCard {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +201,7 @@
     background-color: #fff;
 }
 
-#whyOzoneSection .advantageCard .listItems {
+.ozoneServicesSection .advantageCard .listItems {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -37,25 +209,25 @@
     width: 600px;
 }
 
-#whyOzoneSection .advantageCard .listItems h4 {
+.ozoneServicesSection .advantageCard .listItems h4 {
     width: 550px;
     font-size: 20px;
 }
 
-#whyOzoneSection .advantageCard .listItems .listItem {
+.ozoneServicesSection .advantageCard .listItems .listItem {
     display: flex;
     align-items: center;
     gap: 10px;
     width: 800px;
 }
 
-#whyOzoneSection .advantageCard .listItems .listItem .check {
+.ozoneServicesSection .advantageCard .listItems .listItem .check {
     height: 50px;
     width: 50px;
     color: #34b74a;
 }
 
-#whyOzoneSection .advantageCard img {
+.ozoneServicesSection .advantageCard img {
     height: 220px;
     width: 220px;
-}
+} */

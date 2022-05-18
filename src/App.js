@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { PestControl, Ozone, Ozone_temp, Documents, PrivacyPolicy } from './containers';
+import { PestControl, Ozone, Documents, PrivacyPolicy } from './containers';
 
 // Google Analytics tracking setup
 import ReactGA from 'react-ga';

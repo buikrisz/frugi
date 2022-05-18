@@ -6,7 +6,7 @@ import about_us from '../../images/about_us.jpg';
 
 function ChooseUs() {
     return (
-        <div id='rolunk'>
+        <section id='rolunk' className='pestChooseUsSection'>
             <h3 className='title'>Miért minket válasszon?</h3>
             <div className='content'>
                 <div className='contentSeparator leftContent'>
@@ -41,7 +41,7 @@ function ChooseUs() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -1,0 +1,176 @@
+.ozoneChooseUsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../../images/landing_bg.jpg");
+    min-height: 100vh;
+    width: 100%;
+    color: #010252;
+}
+
+.ozoneChooseUsSection .ozoneChooseUsTitleDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 200px;
+    width: 100%;
+}
+
+.ozoneChooseUsSection .ozoneChooseUsTitleDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 200px;
+    width: 100%;
+}
+
+.ozoneChooseUsSection .ozoneChooseUsTitleDiv div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ozoneChooseUsSection .ozoneChooseUsTitleDiv div .title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.ozoneChooseUsSection .ozoneChooseUsTitleDiv .windIcon.windLeftIcon {
+    transform: rotateY(180deg);
+}
+
+.ozoneChooseUsSection .ozoneChooseUsContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    min-height: calc(100vh - 280px);
+    width: 90%;
+}
+
+.ozoneChooseUsSection .ozoneChooseUsContent::after {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 5px dotted #010252;
+    content: "";
+    width: 80%;
+    z-index: 1;
+}
+
+@media (max-width: 1560px) {
+    .ozoneChooseUsSection .ozoneChooseUsContent::after {
+        display: none;
+    }
+}
+
+.ozoneChooseUsSection .ozoneChooseUsContent .ozoneChooseUsContentCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 5px #c8c8c8;
+    transition: 1s;
+    z-index: 2;
+}
+
+.ozoneChooseUsSection .ozoneChooseUsContent .ozoneChooseUsContentCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 2px #7d7d7d;
+}
+
+.ozoneChooseUsSection .ozoneChooseUsContent .ozoneChooseUsContentCard h3 {
+    width: 90%;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+} 
+
+.ozoneChooseUsSection .ozoneChooseUsContent .ozoneChooseUsContentCard h6 {
+    font-size: 17px;
+    font-weight: 400;
+    height: 200px;
+    width: 90%;
+}
+
+@media (max-width: 1280px) {
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv {
+        gap: 30px;
+    }
+
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv div .title {
+        font-size: 25px;
+    }
+
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv div h4 {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv div h5 {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv .windIcon {
+        width: 120px;
+    }
+}
+
+@media (max-width: 820px) {
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv {
+        gap: 25px;
+    }
+
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv div .title {
+        font-size: 20px;
+    }
+
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv div h4 {
+        font-size: 12px;
+    }
+    
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv div h5 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv {
+        gap: 25px;
+    }
+
+    .ozoneChooseUsSection .ozoneChooseUsTitleDiv .windIcon {
+        display: none;
+    }
+
+    .ozoneChooseUsSection .ozoneChooseUsContent .ozoneChooseUsContentCard {
+        justify-content: center;
+        gap: 15px;
+        height: 300px;
+        width: 85%;
+    } 
+
+    .ozoneChooseUsSection .ozoneChooseUsContent .ozoneChooseUsContentCard h3 {
+        font-size: 20px;
+    } 
+    
+    .ozoneChooseUsSection .ozoneChooseUsContent .ozoneChooseUsContentCard h6 {
+        font-size: 14px;
+        height: unset;
+        width: 85%;
+    }
+}

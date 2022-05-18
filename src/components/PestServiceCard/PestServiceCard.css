@@ -14,11 +14,6 @@
     transition: 0.5s;
 }
 
-/* .serviceCard:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-} */
-
 .serviceCard img {
     height: 100px;
     width: 100px;

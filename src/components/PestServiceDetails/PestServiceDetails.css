@@ -1,5 +1,16 @@
-.serviceDetails {
+.serviceDetailsBg {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.serviceDetails {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;

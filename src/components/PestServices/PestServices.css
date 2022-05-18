@@ -1,4 +1,4 @@
-#szolgaltatasok {
+.pestServicesSection {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     width: 100%;
 }
 
-#szolgaltatasok .serviceCards {
+.pestServicesSection .serviceCards {
     display: flex;
     justify-content: center;
     align-items: center;

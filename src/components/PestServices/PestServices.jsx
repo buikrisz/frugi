@@ -23,7 +23,7 @@ function Services() {
     const [showDetails, setShowDetails] = useState({ show: false, id: null })
 
     return (
-        <div id='szolgaltatasok'>
+        <div id='szolgaltatasok' className='pestServicesSection'>
             <h3 className='title'>Szolgáltatásaink</h3>
             <div className='serviceCards'>
                 {services.map(service => <PestServiceCard key={service.id} id={service.id} img={service.img} title={service.title} setShowDetails={setShowDetails} /> )}
