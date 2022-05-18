@@ -68,7 +68,7 @@ function ContactForm({ formSubmitted, setFormSubmitted, formData, setFormData, s
             <textarea name="contactMessage" id="contactMessage" cols="30" rows="10" placeholder='Üzenet...' value={formData.contactMessage} onChange={handleChange} required />
             <div className='contactFormCheckbox'>
                 <input type="checkbox" name="contactPrivacyPolicy" id="contactPrivacyPolicy" checked={formData.contactPrivacyPolicy} onChange={handleChange} required />
-                <label htmlFor="contactPrivacyPolicy">Elfogadom az adatvédelmi nyilatkozatot.</label>
+                <label htmlFor="contactPrivacyPolicy">Elfogadom az <a href='/adatvedelmi' target="_blank">adatvédelmi nyilatkozatot</a>.</label>
             </div>
             <button>Küldés</button>
         </form>

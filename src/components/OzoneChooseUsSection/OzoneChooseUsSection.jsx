@@ -17,7 +17,7 @@ function OzoneChooseUsSection() {
             <div className='ozoneChooseUsContent'>
                 <div className='ozoneChooseUsContentCard'>
                     <h3>Kik vagyunk?</h3>
-                    <h6>Cégünk kártevőirtással, vegyszeres- illetve ózongenerátoros fertőtlenítő tisztítással foglalkozik. Szakképzett kollégáink minőségi munkájukkal egy tiszta- és egészséges légkört teremtenek meg ügyfeleink számára.</h6>
+                    <h6>Cégünk kártevőirtással, vegyszeres- illetve ózongenerátoros fertőtlenítéssel foglalkozik. Szakképzett kollégáink minőségi munkájukkal egy tiszta- és egészséges légkört teremtenek meg ügyfeleink számára.</h6>
                 </div>
                 <div className='ozoneChooseUsContentCard'>
                     <h3>Mi a célunk?</h3>

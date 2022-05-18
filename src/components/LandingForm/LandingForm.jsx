@@ -51,7 +51,7 @@ function LandingForm() {
                 <input type="text" name="location" id="location" placeholder="Melyik város / kerület?" value={formValue.location} onChange={handleChange} required />
                 <div className='landingFormCheckbox'>
                     <input type="checkbox" name="privacyPolicy" id="privacyPolicy" checked={formValue.privacyPolicy} onChange={handleChange} required />
-                    <label htmlFor="privacyPolicy">Elfogadom az adatvédelmi nyilatkozatot.</label>
+                    <label htmlFor="privacyPolicy">Elfogadom az <a href='/adatvedelmi' target="_blank">adatvédelmi nyilatkozatot</a>.</label>
                 </div>
                 <button>Visszahívást kérek!</button>
             </form> 
