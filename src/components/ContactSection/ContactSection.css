@@ -161,6 +161,12 @@
     font-size: 16px;
 }
 
+#kapcsolat .formInfo form .contactFormCheckbox label .linkToPrivacyPolicy {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0000EE;
+}
+
 #kapcsolat .formInfo form input::placeholder, #kapcsolat form textarea::placeholder {
     opacity: 0.5;
 }

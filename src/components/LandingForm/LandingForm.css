@@ -61,6 +61,12 @@
     background-color: #308f3f;
 }
 
+.landingContent .landingForm .linkToPrivacyPolicy {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0000EE;
+}
+
 @media (max-width: 820px) {  
     
     .landingContent .landingForm {
