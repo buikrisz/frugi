@@ -1,21 +1,26 @@
-import React from 'react';
+import { useState } from 'react';
 import './PestChooseUs.css';
 import { HiPlusCircle } from 'react-icons/hi';
 import { BsCheck2Circle } from 'react-icons/bs';
 import about_us from '../../images/about_us.jpg';
+import tools from '../../images/tools.jpg';
 
 function ChooseUs() {
+    const [showTools, setShowTools] = useState(false);
     return (
         <section id='rolunk' className='pestChooseUsSection'>
             <h3 className='title'>Miért minket válasszon?</h3>
             <div className='content'>
                 <div className='contentSeparator leftContent'>
-                    <button className='left'>
+                    <button className="left" onClick={() => setShowTools(true)}>
                         <h4>Teljes felszereltség</h4>
                         <HiPlusCircle className='icon' />
                     </button>
-                    <img src={about_us} alt="About us" className='aboutUs' />
-                    <button className='right'>
+                    <div className="imgDiv">
+                        <img src={about_us} alt="About us" className={showTools ? "aboutUs hide" : "aboutUs"} />
+                        <img src={tools} alt="About us" className={showTools ? "toolsImg" : "toolsImg hide"} />
+                    </div>
+                    <button className='right' onClick={() => setShowTools(false)}>
                         <HiPlusCircle className='icon' />
                         <h4>Kiemelkedő szolgáltatás</h4>
                     </button>

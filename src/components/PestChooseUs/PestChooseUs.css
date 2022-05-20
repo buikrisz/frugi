@@ -33,15 +33,13 @@
     gap: 10px;
     background-color: #fff;
     height: 40px;
+    width: 280px;
     padding: 0 15px;
     font-size: 14px;
-    box-shadow: 0 0 5px 2px rgb(200, 200, 200);
+    box-shadow: 0 0 5px 2px #c8c8c8;
     border-radius: 30px;
-    transition: 0.5s;
-}
-
-.pestChooseUsSection .content .contentSeparator button:hover {
-    cursor: pointer;
+    z-index: 3;
+    transition: transform 0.5s;
 }
 
 .pestChooseUsSection .content .contentSeparator button .icon {
@@ -56,25 +54,39 @@
     transform: translateX(-50%);
 }
 
-.pestChooseUsSection .content .contentSeparator .left:hover {
-    transform: translateX(-50%) scale(1.05);
-}
-
 .pestChooseUsSection .content .contentSeparator .right {
     bottom: 30%;
     right: 0;
     transform: translateX(50%);
 }
 
+.pestChooseUsSection .content .contentSeparator .left:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
 .pestChooseUsSection .content .contentSeparator .right:hover {
     transform: translateX(50%) scale(1.05);
 }
 
-.pestChooseUsSection .content .contentSeparator .aboutUs {
+.pestChooseUsSection .content .contentSeparator .imgDiv {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+}
+
+.pestChooseUsSection .content .contentSeparator .imgDiv .aboutUs, .pestChooseUsSection .content .contentSeparator .imgDiv .toolsImg {
+    position: absolute;
     height: 600px;
     width: 600px;
     border-radius: 50%;
     object-fit: cover;
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.pestChooseUsSection .content .contentSeparator .imgDiv img.hide {
+    opacity: 0;
 }
 
 .pestChooseUsSection .content .rightContent {
@@ -144,16 +156,27 @@
         height: unset;
     }
 
-    .pestChooseUsSection .content .contentSeparator .aboutUs {
+    .pestChooseUsSection .content .contentSeparator .imgDiv {
+        height: 500px;
+        width: 500px;
+    }
+
+    .pestChooseUsSection .content .contentSeparator .imgDiv .aboutUs, .pestChooseUsSection .content .contentSeparator .imgDiv .toolsImg {
         height: 500px;
         width: 500px;
     }
 }
 
 @media (max-width: 820px) {  
-    .pestChooseUsSection .content .contentSeparator .aboutUs {
-        height: auto;
-        width: 80%;
+
+    .pestChooseUsSection .content .contentSeparator .imgDiv {
+        height: 400px;
+        width: 400px;
+    }
+
+    .pestChooseUsSection .content .contentSeparator .imgDiv .aboutUs, .pestChooseUsSection .content .contentSeparator .imgDiv .toolsImg {
+        height: 100%;
+        width: 100%;
     }
 
     .pestChooseUsSection .content .contentSeparator button {
@@ -194,12 +217,14 @@
 }
 
 @media (max-width: 450px) {  
-    .pestChooseUsSection .content .contentSeparator .aboutUs {
+    .pestChooseUsSection .content .contentSeparator .imgDiv {
         height: 250px;
         width: 250px;
     }
 
     .pestChooseUsSection .content .contentSeparator button {
+        height: 30px;
+        width: 220px;
         font-size: 11px;
     }
 
