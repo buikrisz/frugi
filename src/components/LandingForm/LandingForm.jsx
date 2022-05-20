@@ -9,9 +9,17 @@ function LandingForm() {
     const [formValue, setFormValue] = useState(
         { name: "", phone: "", service: "", location: "", district: "", privacyPolicy: false }
     )
+
+    const [locationFocus, setLocationFocus] = useState(false);
+    const [serviceFocus, setServiceFocus] = useState(false);
+
     const [locationClicked, setLocationClicked] = useState(false);
+    const [serviceClicked, setServiceClicked] = useState(false);
+    
     const cityNames = cities.map(city => city.city);
-    const districts = ["I.","II.","III.","IV.","V.","VI.","VII.","VIII.","IX.","X.","XI.","XII.","XIII.","XIV.","XV.","XVI.","XVII.","XVIII.","XIX.","XX.","XXI.","XXII.","XXIII."]
+    const services = ["Kártevőirtás", "Fertőtlenítés", "Egyéb"];
+    /* const [districtClicked, setDistrictClicked] = useState(false);
+    const districts = ["I.","II.","III.","IV.","V.","VI.","VII.","VIII.","IX.","X.","XI.","XII.","XIII.","XIV.","XV.","XVI.","XVII.","XVIII.","XIX.","XX.","XXI.","XXII.","XXIII."]; */
 
     function handleChange(e) {
         const { name, value, type, checked } = e.target;
@@ -19,6 +27,21 @@ function LandingForm() {
             { ...formValue, [name]: type === "checkbox" ? checked : value }
         )
         name === "location" && setLocationClicked(false);
+        name === "service" && setServiceClicked(false);
+    }
+
+    function handleFocus(e) {
+        const { name } = e.target;
+        if (name === "service") {
+            setServiceFocus(true);
+            setLocationFocus(false);
+        } else if (name === "location") {
+            setServiceFocus(false);
+            setLocationFocus(true);
+        } else {
+            setServiceFocus(false);
+            setLocationFocus(false);
+        }
     }
 
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -29,8 +52,9 @@ function LandingForm() {
         () => {
             if (formSubmitted) {
                 setAnimationStarted(true);
+                console.log(formValue.district);
                 emailjs.send(apiKey.SERVICE_ID, apiKey.CALLBACK_TEMPLATE_ID, 
-                    { from_name: formValue.name, from_phone: formValue.phone, from_service: formValue.service, from_location: formValue.location },
+                    { from_name: formValue.name, from_phone: formValue.phone, from_service: formValue.service, from_location: formValue.location, from_district: formValue.district },
                     apiKey.PUBLIC_KEY)
                 .then(res => {
                     console.log('Email sent');
@@ -51,16 +75,22 @@ function LandingForm() {
                 setFormSubmitted(true);
             }}>
                 <h2>Kérjen visszahívást:</h2>
-                <input type="text" name="name" id="name" placeholder="Név" value={formValue.name} onChange={handleChange} required />
-                <input type="text" name="phone" id="phone" placeholder="Telefonszám" value={formValue.phone} onChange={handleChange} required />
-                <input type="text" name="service" id="service" placeholder="Melyik szolgáltatás érdekli?" value={formValue.service} onChange={handleChange} />
+                <input type="text" name="name" id="name" placeholder="Név" value={formValue.name} onChange={handleChange} onFocus={handleFocus} required />
+                <input type="text" name="phone" id="phone" placeholder="Telefonszám" value={formValue.phone} onChange={handleChange} onFocus={handleFocus} required />
+                <div className="serviceDiv">
+                    <input type="text" name="service" id="service" placeholder="Melyik szolgáltatás érdekli?" value={formValue.service} onChange={handleChange} onFocus={handleFocus} required />
+                    <LandingFormAutocomplete formValue={formValue} formInput="service" setFormValue={setFormValue} autoCompleteValues={services} clicked={serviceClicked} setClicked={setServiceClicked} minLength={0} focus={serviceFocus} />
+                </div>
                 <div className='locationDiv'>
-                    <input type="text" name="location" id="location" placeholder="Melyik város / kerület?" value={formValue.location} onChange={handleChange} required />
+                    <input type="text" name="location" id="location" placeholder="Melyik város / kerület?" value={formValue.location} onChange={handleChange} onFocus={handleFocus} required />
                     {
                         formValue.location.toLowerCase() === "budapest" &&
-                        <input type="text" name="district" id="district" placeholder="Kerület" value={formValue.district} onChange={handleChange} />
+                        <input type="text" name="district" id="district" placeholder="Kerület" value={formValue.district} onChange={handleChange} onFocus={handleFocus} />
                     }
-                    <LandingFormAutocomplete formValue={formValue} setFormValue={setFormValue} cityNames={cityNames} locationClicked={locationClicked} setLocationClicked={setLocationClicked} />
+                    {
+                        locationFocus &&
+                        <LandingFormAutocomplete formValue={formValue} formInput="location" setFormValue={setFormValue} autoCompleteValues={cityNames} clicked={locationClicked} setClicked={setLocationClicked} minLength={3} focus={locationFocus} />
+                    }
                 </div>
                 <div className='landingFormCheckbox'>
                     <input type="checkbox" name="privacyPolicy" id="privacyPolicy" checked={formValue.privacyPolicy} onChange={handleChange} required />

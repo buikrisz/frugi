@@ -25,18 +25,18 @@
     border-radius: 10px;
 }
 
-.landingContent .landingForm .locationDiv {
+.landingContent .landingForm .locationDiv, .landingContent .landingForm .serviceDiv {
     position: relative;
     display: flex;
     gap: 10px;
     width: 80%;
 }
 
-.landingContent .landingForm .locationDiv input {
+.landingContent .landingForm div input {
     width: 100%;
 }
 
-.landingContent .landingForm .locationDiv .landingFormAutocomplete {
+.landingContent .landingForm div .landingFormAutocomplete {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -46,9 +46,10 @@
     width: 100%;
     max-height: 120px;
     overflow-y: auto;
+    z-index: 2;
 }
 
-.landingContent .landingForm .locationDiv .landingFormAutocomplete .autocompleteListItem {
+.landingContent .landingForm div .landingFormAutocomplete .autocompleteListItem {
     display: flex;
     align-items: center;
     height: 30px;
@@ -58,7 +59,7 @@
     cursor: pointer;
 }
 
-.landingContent .landingForm .locationDiv .landingFormAutocomplete .autocompleteListItem:nth-child(1) {
+.landingContent .landingForm div .landingFormAutocomplete .autocompleteListItem:nth-child(1) {
     border-top: unset;
 }
 

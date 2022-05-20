@@ -1,6 +1,5 @@
 import React from 'react';
 import './OzoneServiceSection.css';
-import { BsCheck2Circle } from 'react-icons/bs';
 import bakterium from '../../images/bacteria.png';
 import ozone_generator from '../../images/ozone_generator.png';
 import lakas from '../../images/house.png';
