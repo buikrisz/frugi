@@ -9,7 +9,7 @@ function Footer() {
             <a href="https://www.instagram.com/frugiozone/" target="_blank" rel="noopener noreferrer nofollow"><BsInstagram className='footerIcon' /></a>
             <h4>|</h4>
             <div className='footerLinks'>
-                <a href='/dokumentumok#iconok'>Ikon gyűjtemény</a>
+                <a href='/dokumentumok#ikonok'>Ikon gyűjtemény</a>
                 {/* <a href='/dokumentumok#biztonsagi'>Biztonsági adatlapok</a> */}
                 <a href='/adatvedelmi'>Adatvédelmi nyilatkozat</a>
             </div>

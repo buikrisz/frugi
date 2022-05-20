@@ -63,7 +63,7 @@
     border-top: unset;
 }
 
-.landingContent .landingForm .locationDiv .landingFormAutocomplete .autocompleteListItem:hover {
+.landingContent .landingForm .landingFormAutocomplete .autocompleteListItem:hover {
     background-color: #edf9f4;
 }
 
