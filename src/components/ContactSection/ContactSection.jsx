@@ -12,9 +12,9 @@ function ContactSection() {
     const [animationStarted, setAnimationStarted] = useState(false);
 
     return (
-        <section itemscope itemtype="https://schema.org/ContactPage" id='kapcsolat'>
+        <section itemScope itemType="https://schema.org/ContactPage" id='kapcsolat'>
             <div className='contactInfo'>
-                <h3 itemprop="title" className='title'>Kapcsolat</h3>
+                <h3 itemProp="title" className='title'>Kapcsolat</h3>
                 <div className='contactInfoCards'>
                     <ContactInfoCard icon="location" title="Iroda cím" text="2120, Dunakeszi Mária utca 23." />
                     <ContactInfoCard icon="phone" title="Telefonszám" text="+36-70-338-4734" />
@@ -24,7 +24,7 @@ function ContactSection() {
             <div className='formInfo'>
                 {
                 (!mailSent && !animationStarted) ? 
-                    <ContactForm itemprop="form" formSubmitted={formSubmitted} setFormSubmitted={setFormSubmitted} formData={formData} setFormData={setFormData} setMailSent={setMailSent} setAnimationStarted={setAnimationStarted} />
+                    <ContactForm itemProp="form" formSubmitted={formSubmitted} setFormSubmitted={setFormSubmitted} formData={formData} setFormData={setFormData} setMailSent={setMailSent} setAnimationStarted={setAnimationStarted} />
                 : (!mailSent && animationStarted) ?
                     <form className='contactForm'>
                         <svg className="loader" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">

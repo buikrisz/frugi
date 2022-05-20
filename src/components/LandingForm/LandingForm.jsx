@@ -2,17 +2,23 @@ import React, { useState, useEffect } from 'react';
 import './LandingForm.css';
 import apiKey from '../../emailkey';
 import emailjs from '@emailjs/browser';
+import cities from '../../data/hu.json';
+import LandingFormAutocomplete from '../LandingFormAutocomplete/LandingFormAutocomplete';
 
 function LandingForm() {
     const [formValue, setFormValue] = useState(
-        { name: "", phone: "", service: "", location: "", privacyPolicy: false }
+        { name: "", phone: "", service: "", location: "", district: "", privacyPolicy: false }
     )
+    const [locationClicked, setLocationClicked] = useState(false);
+    const cityNames = cities.map(city => city.city);
+    const districts = ["I.","II.","III.","IV.","V.","VI.","VII.","VIII.","IX.","X.","XI.","XII.","XIII.","XIV.","XV.","XVI.","XVII.","XVIII.","XIX.","XX.","XXI.","XXII.","XXIII."]
 
     function handleChange(e) {
         const { name, value, type, checked } = e.target;
         setFormValue(
             { ...formValue, [name]: type === "checkbox" ? checked : value }
         )
+        name === "location" && setLocationClicked(false);
     }
 
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -40,7 +46,7 @@ function LandingForm() {
 
     return (
         (!mailSent && !animationStarted) ? 
-            <form className='landingForm' onSubmit={(e) => {
+            <form className='landingForm' autoComplete="off" onSubmit={(e) => {
                 e.preventDefault();
                 setFormSubmitted(true);
             }}>
@@ -48,7 +54,14 @@ function LandingForm() {
                 <input type="text" name="name" id="name" placeholder="Név" value={formValue.name} onChange={handleChange} required />
                 <input type="text" name="phone" id="phone" placeholder="Telefonszám" value={formValue.phone} onChange={handleChange} required />
                 <input type="text" name="service" id="service" placeholder="Melyik szolgáltatás érdekli?" value={formValue.service} onChange={handleChange} />
-                <input type="text" name="location" id="location" placeholder="Melyik város / kerület?" value={formValue.location} onChange={handleChange} required />
+                <div className='locationDiv'>
+                    <input type="text" name="location" id="location" placeholder="Melyik város / kerület?" value={formValue.location} onChange={handleChange} required />
+                    {
+                        formValue.location.toLowerCase() === "budapest" &&
+                        <input type="text" name="district" id="district" placeholder="Kerület" value={formValue.district} onChange={handleChange} />
+                    }
+                    <LandingFormAutocomplete formValue={formValue} setFormValue={setFormValue} cityNames={cityNames} locationClicked={locationClicked} setLocationClicked={setLocationClicked} />
+                </div>
                 <div className='landingFormCheckbox'>
                     <input type="checkbox" name="privacyPolicy" id="privacyPolicy" checked={formValue.privacyPolicy} onChange={handleChange} required />
                     <label htmlFor="privacyPolicy">Elfogadom az <a href='/adatvedelmi' target="_blank" className='linkToPrivacyPolicy'>adatvédelmi nyilatkozatot</a>.</label>

@@ -1,5 +1,6 @@
 //Global
 export { default as LandingForm } from './LandingForm/LandingForm';
+export { default as LandingFormAutocomplete } from './LandingFormAutocomplete/LandingFormAutocomplete';
 export { default as Header } from './Header/Header';
 export { default as HeaderSubPage } from './HeaderSubPage/HeaderSubPage';
 export { default as Footer } from './Footer/Footer';

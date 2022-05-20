@@ -7,12 +7,12 @@ function ServiceDetails({ img, title, text, setShowDetails }) {
         e.target.classList.contains("serviceDetailsBg") && setShowDetails({ show: false, id: null });
     }
     return (
-        <div itemscope itemtype="https://schema.org/ProfessionalService" className='serviceDetailsBg' onClick={handleClick}>
+        <div itemScope itemType="https://schema.org/ProfessionalService" className='serviceDetailsBg' onClick={handleClick}>
             <div className='serviceDetails'>
                 <button onClick={() => setShowDetails({ show: false, id: null })}><FaTimes className='icon' /></button>
                 <img src={img} alt={img} />
-                <h4 itemprop="name">{title}</h4>
-                <h6 itemprop="description">{text}</h6>
+                <h4 itemProp="name">{title}</h4>
+                <h6 itemProp="description">{text}</h6>
             </div>
         </div>
     )

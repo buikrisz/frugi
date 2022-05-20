@@ -43,7 +43,7 @@ function ContactForm({ formSubmitted, setFormSubmitted, formData, setFormData, s
                 <input type="text" name="contactMail" id="contactMail" placeholder='E-mail' value={formData.contactMail} onChange={handleChange} required />
                 {
                     selectedSite !== "ozone" ?
-                    <select name="contactService" id="contactService" defaultValue="" className={formData.contactService === "" ? "unselected" : "selected"} onChange={handleChange}>
+                    <select name="contactService" id="contactService" className={formData.contactService === "" ? "unselected" : "selected"} value={formData.contactService} onChange={handleChange}>
                         <option value="" disabled hidden>Szolgáltatások...</option>
                         <option value="agyipoloskairtas">Ágyi poloska irtás</option>
                         <option value="csotanyirtas">Csótányirtás</option>
@@ -53,7 +53,7 @@ function ContactForm({ formSubmitted, setFormSubmitted, formData, setFormData, s
                         <option value="molyirtas">Molyirtás</option>
                         <option value="egyeb">Egyéb</option>
                     </select> :
-                    <select name="contactService" id="contactService" defaultValue="" className={formData.contactService === "" ? "unselected" : "selected"} onChange={handleChange}>
+                    <select name="contactService" id="contactService" className={formData.contactService === "" ? "unselected" : "selected"} value={formData.contactService} onChange={handleChange}>
                         <option value="" disabled hidden>Milyen fertőtlenítés...</option>
                         <option value="lakas">Lakás</option>
                         <option value="iroda">Iroda</option>

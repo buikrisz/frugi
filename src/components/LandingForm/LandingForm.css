@@ -25,8 +25,49 @@
     border-radius: 10px;
 }
 
+.landingContent .landingForm .locationDiv {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    width: 80%;
+}
+
+.landingContent .landingForm .locationDiv input {
+    width: 100%;
+}
+
+.landingContent .landingForm .locationDiv .landingFormAutocomplete {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 100%;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.landingContent .landingForm .locationDiv .landingFormAutocomplete .autocompleteListItem {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-left: 20px;
+    font-size: 12px;
+    border-top: 1px solid #010252;
+    cursor: pointer;
+}
+
+.landingContent .landingForm .locationDiv .landingFormAutocomplete .autocompleteListItem:nth-child(1) {
+    border-top: unset;
+}
+
+.landingContent .landingForm .locationDiv .landingFormAutocomplete .autocompleteListItem:hover {
+    background-color: #edf9f4;
+}
+
 .landingContent .landingForm input::placeholder {
-    color: rgb(200, 200, 200);
+    color: #c8c8c8;
 }
 
 .landingContent .landingForm .landingFormCheckbox {
@@ -81,6 +122,10 @@
         height: 60px;
         font-size: 16px;
     }
+
+    .landingContent .landingForm .locationDiv {
+        height: 60px;
+    }
     
     .landingContent .landingForm button {
         height: 60px;
@@ -103,6 +148,10 @@
     .landingContent .landingForm input {
         height: 50px;
         font-size: 14px;
+    }
+
+    .landingContent .landingForm .locationDiv {
+        height: 50px;
     }
     
     .landingContent .landingForm button {
