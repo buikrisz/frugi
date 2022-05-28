@@ -42,7 +42,10 @@ function ChooseUs() {
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />
-                        <h4>Magánszemélyek megrendelésein felül vendéglátóhelyek, szálláshelyek, irodák, raktárak, csarnokok és ipartelepek kezelését is vállaljuk</h4>
+                        <h4>Vállaljuk magánházak, lakások, társasházak, vendéglátóhelyek, szálláshelyek,
+                            üzletek, iparterületek, raktárak kötelező, egyedi és rendszeres (HACCP)
+                            kártevőirtását.
+                        </h4>
                     </div>
                 </div>
             </div>
