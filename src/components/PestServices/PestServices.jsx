@@ -11,7 +11,8 @@ import epuletek from '../../images/epuletek.png';
 
 function Services() {
     const services = [
-        {id:0, img: agyipoloska, title: "Ágyi poloska irtás", intro: ``, text: `Az ágyi poloska kizárólag vérrel táplálkozik, ezért téves az a közhiedelem, hogy
+        {id:0, img: agyipoloska, title: "Ágyi poloska irtás", intro: `Az ágyi poloska kizárólag vérrel táplálkozik, ezért téves az a közhiedelem, hogy
+        takarítatlan helyen jelenik meg.`, text: `Az ágyi poloska kizárólag vérrel táplálkozik, ezért téves az a közhiedelem, hogy
         takarítatlan helyen jelenik meg. Rozsdabarna színű 4-8 mm hosszú, szipókás
         rovar. Az ivarérett nőstény ágyi poloska naponta 2-3 petét rak, melyből 10-14 nap
         alatt kelnek ki a lárvák. Az ágyi poloska rejtőzködő életmódjának köszönhetően
@@ -33,7 +34,8 @@ function Services() {
         csótányokhoz hasonlóan az ágyi poloskák ellen pete állapotban hatékonyan
         nem lehet fellépni, ezért célszerű az első kezelés után 10-14 nappal - az újabb
         ágyi poloska nemzedék kikelése után – kártevőirtást végrehajtani.`},
-        {id:1, img: csotany, title: "Csótányirtás", intro: ``, text: `A csótányok az ágyi poloskákhoz hasonlóan rejtőzködő életmódot folytatnak,
+        {id:1, img: csotany, title: "Csótányirtás", intro: `A csótányok az ágyi poloskákhoz hasonlóan rejtőzködő életmódot folytatnak,
+        azonban jobban szeretik a párásabb környezetet.`, text: `A csótányok az ágyi poloskákhoz hasonlóan rejtőzködő életmódot folytatnak,
         azonban jobban szeretik a párásabb környezetet. Erősen lapított testű, ovális
         körvonalú rovarok a csótányok. Rágó szájszerveik vannak, mindenevők. A
         csótány petéiből a lárvák 2-4 hónap alatt kelnek ki, ez függ a hőmérséklettől és a
@@ -46,11 +48,11 @@ function Services() {
         irtószermentes állomást (ragacsoslapot) is használhatunk. Ahogy az ágyi
         poloskáknál is a csótányok esetében is célszerű egy második kezelést is
         egyeztetni a kártevőirtó szakemberrel a fertőzöttség függvényében.`},
-        {id:2, img: ragcsalo, title: "Rágcsáló irtás", intro: ``, text: "Hazánkban két patkányfaj fordul elő a vándorpatkány és a házi patkány. Térségünkben először a házi patkány jelent meg, de mára a vándorpatkány kiszorította és csak néha találkozunk vele. A patkányok megtalálhatóak föld alatti járatokban, csatornákban, fa- és téglarakásokban készített fészkeikben, talajszinten de házak, épületek padlásain is. Ahol megjelennek ott gyorsan elszaporodhatnak, ugyanis szaporák és három hónapos korukra ivaréretté válnak. Különböző betegségek terjesztésén kívül rágásukkal is jelentős kárt okoznak. Megrágják az épület tartószerkezeteit, villany-, vízvezetékeit. Alkalmanként nem kis kárt okozva ezzel."},
-        {id:3, img: darazs, title: "Darázs irtás", intro: ``, text: "A darazsak általában az embert nem bántják, kivéve ha veszélyeztetve érzik magukat, kolóniájukat. A darazsak fullánkjukat a méhektől eltérően többször is tudják használni, a befecskendezett méreg a kellemetlen csípő érzésen kívül allergiás reakciót is kiválthat. Jellemzően tavasszal kezdik meg a fészek építést, de más évszakban is szükség lehet az irtásukra."},
-        {id:4, img: hangya, title: "Hangyairtás", intro: ``, text: "A hangyák is kozmopolita élőlények. Hazánkban is megtalálhatók udvarokon és zárt helyeken, lakásokban, irodákban is. A szapora rovarok bolyokban élnek. Bármilyen épületben megtalálják a bejutás lehetőségét és ha kell maguk is képesek bejáratott útvonalat készíteni. Irtásukra a mérgezett csalétek gél kihelyezése és a permetezés szokott a leg célravezetőbb lenni."},
-        {id:5, img: moly, title: "Molyirtás", intro: ``, text: `Hazánkban jellemzően az élelmiszer és ruhamoly okoz kellemetlenséget. Az élelmiszer moly a konyhák és éléskamrák ellensége, a ruhamoly pedig nevéhez méltóan elsősorban a ruhásszekrényekben garázdálkodik. Irtásuk fontos, mert hamar elszaporodnak és az esti nyugalom megzavarásán kívül tönkre tehetik az élelmiszer alapanyagokat (liszt, fűszerek…) vagy éppen szeretett ruhadarabjainkat. Ha a szekrénybe teszünk szárított levendulát, dohányt vagy narancshéjat az elriaszthatja a molyokat. A molyokat jellemzően feromonos csapdákkal tudjuk megfékezni. Ez azonban egy hosszabb folyamat. Nagyobb fertőzés esetén kellő odafigyeléssel irtószeres irtás is szóba jöhet.`},
-        {id:6, img: epuletek, title: "Vállalkozásoknak", intro: ``, text: `Vállaljuk lakások, társasházak, vendéglátóhelyek, szálláshelyek, üzletek, iparterületek, raktárak kötelező, egyedi és rendszeres (HACCP) kártevőirtását.`}
+        {id:2, img: ragcsalo, title: "Rágcsáló irtás", intro: `Hazánkban két patkányfaj fordul elő a vándorpatkány és a házi patkány.`, text: "Hazánkban két patkányfaj fordul elő a vándorpatkány és a házi patkány. Térségünkben először a házi patkány jelent meg, de mára a vándorpatkány kiszorította és csak néha találkozunk vele. A patkányok megtalálhatóak föld alatti járatokban, csatornákban, fa- és téglarakásokban készített fészkeikben, talajszinten de házak, épületek padlásain is. Ahol megjelennek ott gyorsan elszaporodhatnak, ugyanis szaporák és három hónapos korukra ivaréretté válnak. Különböző betegségek terjesztésén kívül rágásukkal is jelentős kárt okoznak. Megrágják az épület tartószerkezeteit, villany-, vízvezetékeit. Alkalmanként nem kis kárt okozva ezzel."},
+        {id:3, img: darazs, title: "Darázs irtás", intro: `A darazsak általában az embert nem bántják, kivéve ha veszélyeztetve érzik magukat, kolóniájukat.`, text: "A darazsak általában az embert nem bántják, kivéve ha veszélyeztetve érzik magukat, kolóniájukat. A darazsak fullánkjukat a méhektől eltérően többször is tudják használni, a befecskendezett méreg a kellemetlen csípő érzésen kívül allergiás reakciót is kiválthat. Jellemzően tavasszal kezdik meg a fészek építést, de más évszakban is szükség lehet az irtásukra."},
+        {id:4, img: hangya, title: "Hangyairtás", intro: `A hangyák is kozmopolita élőlények. Hazánkban is megtalálhatók udvarokon és zárt helyeken, lakásokban, irodákban is.`, text: "A hangyák is kozmopolita élőlények. Hazánkban is megtalálhatók udvarokon és zárt helyeken, lakásokban, irodákban is. A szapora rovarok bolyokban élnek. Bármilyen épületben megtalálják a bejutás lehetőségét és ha kell maguk is képesek bejáratott útvonalat készíteni. Irtásukra a mérgezett csalétek gél kihelyezése és a permetezés szokott a leg célravezetőbb lenni."},
+        {id:5, img: moly, title: "Molyirtás", intro: `Hazánkban jellemzően az élelmiszer és ruhamoly okoz kellemetlenséget.`, text: `Hazánkban jellemzően az élelmiszer és ruhamoly okoz kellemetlenséget. Az élelmiszer moly a konyhák és éléskamrák ellensége, a ruhamoly pedig nevéhez méltóan elsősorban a ruhásszekrényekben garázdálkodik. Irtásuk fontos, mert hamar elszaporodnak és az esti nyugalom megzavarásán kívül tönkre tehetik az élelmiszer alapanyagokat (liszt, fűszerek…) vagy éppen szeretett ruhadarabjainkat. Ha a szekrénybe teszünk szárított levendulát, dohányt vagy narancshéjat az elriaszthatja a molyokat. A molyokat jellemzően feromonos csapdákkal tudjuk megfékezni. Ez azonban egy hosszabb folyamat. Nagyobb fertőzés esetén kellő odafigyeléssel irtószeres irtás is szóba jöhet.`},
+        {id:6, img: epuletek, title: "Vállalkozásoknak", intro: `Vállaljuk lakások, társasházak, vendéglátóhelyek, szálláshelyek, üzletek, iparterületek, raktárak kötelező, egyedi és rendszeres (HACCP) kártevőirtását.`, text: `Vállaljuk lakások, társasházak, vendéglátóhelyek, szálláshelyek, üzletek, iparterületek, raktárak kötelező, egyedi és rendszeres (HACCP) kártevőirtását.`}
     ];
 
     const [showDetails, setShowDetails] = useState({ show: false, id: null })
@@ -59,7 +61,7 @@ function Services() {
         <div id='szolgaltatasok' className='pestServicesSection'>
             <h3 className='title'>Szolgáltatásaink</h3>
             <div className='serviceCards'>
-                {services.map(service => <PestServiceCard key={service.id} id={service.id} img={service.img} title={service.title} setShowDetails={setShowDetails} /> )}
+                {services.map(service => <PestServiceCard key={service.id} id={service.id} img={service.img} title={service.title} intro={service.intro} setShowDetails={setShowDetails} /> )}
             </div>
             { showDetails.show && <PestServiceDetails img={services[showDetails.id].img} title={services[showDetails.id].title} text={services[showDetails.id].text} setShowDetails={setShowDetails} />}
         </div>

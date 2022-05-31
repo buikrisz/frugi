@@ -229,6 +229,7 @@
     }
 
     .pestChooseUsSection .content .rightContent {
+        gap: 10px;
         width: 325px;
     }
     

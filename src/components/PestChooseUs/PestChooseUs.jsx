@@ -30,7 +30,7 @@ function ChooseUs() {
                     <h3>Legjobb minőségű szolgáltatásokat biztosítjuk kártevő problémáira!</h3>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />
-                        <h4>Figyelembe vesszük ügyfeleink biztonságát és elégedettségét</h4>
+                        <h4>Szakképzett kollégáink minőségi szolgáltatást biztosítanak, ügyfeleink elégedettségét és biztonságát szem előtt tartva</h4>
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />  
@@ -38,7 +38,7 @@ function ChooseUs() {
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />
-                        <h4>Minőségi szolgáltatásunkat szakképzett kollégáink biztosítják</h4>
+                        <h4>Fő szolgáltatásaink: ágyi poloska irtás, csótányirtás, rágcsáló irtás, darázs irtás, hangyairtás, molyirtás</h4>
                     </div>
                     <div className="listItem">
                         <BsCheck2Circle className='check' />
