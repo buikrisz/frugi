@@ -6,6 +6,9 @@ import gohkilaht from '../../data/Gokilaht_10MC_rovarirto_koncentratum_hu_v1.pdf
 import peststop_10ec from '../../data/PESTSTOP_10EC_rovarirto_koncentratum.pdf';
 import peststop_combi from '../../data/PestStop_Combi_8_CS_rovarirto_koncentratum_hu_v7.pdf';
 import protect_pro from '../../data/PROTECT-PRO-paraffinos-ragcsaloirto-blokk_hu.pdf';
+import antivespe from '../../data/ANTIVESPE_darazsirto_aeroszol_biztonsagi_adatlap_doc.pdf';
+import bombex_farumy from '../../data/Bombex_Farumy.pdf';
+import cleankill from '../../data/cleankill.pdf';
 import { MdFileDownload } from 'react-icons/md';
 
 function Pdfs({ setShowPdfs }) {
@@ -37,9 +40,21 @@ function Pdfs({ setShowPdfs }) {
                     <MdFileDownload className='pdfIcon' />
                     <a href={peststop_combi} download="PestStop_Combi_8_CS_rovarirto_koncentratum_hu_v7">PestStop Combi 8 CS rovarirtó koncentrátum</a>
                 </div>
-                <div className='lastDiv'>
+                <div>
                     <MdFileDownload className='pdfIcon' />
                     <a href={protect_pro} download="PROTECT-PRO-paraffinos-ragcsaloirto-blokk_hu">PROTECT PRO paraffinos rágcsálóirtó blokk</a>
+                </div>
+                <div>
+                    <MdFileDownload className='pdfIcon' />
+                    <a href={antivespe} download="ANTIVESPE_darazsirto_aeroszol_biztonsagi_adatlap_doc">ANTIVESPE darázsirtó aeroszol</a>
+                </div>
+                <div>
+                    <MdFileDownload className='pdfIcon' />
+                    <a href={bombex_farumy} download="Bombex_Farumy">Bombex Farumy</a>
+                </div>
+                <div className='lastDiv'>
+                    <MdFileDownload className='pdfIcon' />
+                    <a href={cleankill} download="cleankill">Cleankill</a>
                 </div>
             </div>
         </div>
