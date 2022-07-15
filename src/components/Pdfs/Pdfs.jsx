@@ -9,6 +9,12 @@ import protect_pro from '../../data/PROTECT-PRO-paraffinos-ragcsaloirto-blokk_hu
 import antivespe from '../../data/ANTIVESPE_darazsirto_aeroszol_biztonsagi_adatlap_doc.pdf';
 import bombex_farumy from '../../data/Bombex_Farumy.pdf';
 import cleankill from '../../data/cleankill.pdf';
+import protect_darazsirto from '../../data/Protect_darazsirto_aeroszol_hu_v5.pdf';
+import protectr_forte_rovarirto from '../../data/PROTECTr_Forte_rovarirto_porozoszer_hu_v3.pdf';
+import biopren_6_agyipoloska from '../../data/BIOPREN_6_EC_agyi_poloska-es_bolhairto_koncentratum_hu_v7.pdf';
+import deltasect from '../../data/Deltasect_HU4.pdf';
+import pesguard_koncentratum from '../../data/PESGUARD-B_koncentratum_MSDS_3v_160601.pdf';
+import msds_aquapy_rovarirto from '../../data/msds-Aquapy-Rovarirto-koncentratum-CLP-11789.pdf';
 import { MdFileDownload } from 'react-icons/md';
 
 function Pdfs({ setShowPdfs }) {
@@ -51,6 +57,30 @@ function Pdfs({ setShowPdfs }) {
                 <div>
                     <MdFileDownload className='pdfIcon' />
                     <a href={bombex_farumy} download="Bombex_Farumy">Bombex Farumy</a>
+                </div>
+                <div>
+                    <MdFileDownload className='pdfIcon' />
+                    <a href={protect_darazsirto} download="Protect_darazsirto_aeroszol_hu_v5">Protect darázsirtó aeroszol</a>
+                </div>
+                <div>
+                    <MdFileDownload className='pdfIcon' />
+                    <a href={protectr_forte_rovarirto} download="PROTECTr_Forte_rovarirto_porozoszer_hu_v3">PROTECTr Forte rovarirtó porozószer</a>
+                </div>
+                <div>
+                    <MdFileDownload className='pdfIcon' />
+                    <a href={biopren_6_agyipoloska} download="BIOPREN_6_EC_agyi_poloska-es_bolhairto_koncentratum_hu_v7">BIOPREN 6 EC ágyi poloska-és bolhairtó koncentrátum</a>
+                </div>
+                <div>
+                    <MdFileDownload className='pdfIcon' />
+                    <a href={deltasect} download="Deltasect_HU4">Deltasect</a>
+                </div>
+                <div>
+                    <MdFileDownload className='pdfIcon' />
+                    <a href={pesguard_koncentratum} download="PESGUARD-B_koncentratum_MSDS_3v_160601">PESGUARD-B koncentrátum MSDS</a>
+                </div>
+                <div>
+                    <MdFileDownload className='pdfIcon' />
+                    <a href={msds_aquapy_rovarirto} download="msds-Aquapy-Rovarirto-koncentratum-CLP-11789">MSDS Aquapy Rovarirtó koncentrátum</a>
                 </div>
                 <div className='lastDiv'>
                     <MdFileDownload className='pdfIcon' />
