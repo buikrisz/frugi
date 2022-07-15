@@ -9,7 +9,11 @@ function ContactInfoCard({ icon, title, text}) {
         {icon === "location" ? <IoLocationOutline className='icon' /> : icon === "phone" ? <FiPhoneCall className='icon' /> : <GoMail className='icon' />}
         <div>
             <h3>{title}</h3>
-            <h5>{text}</h5>
+            {
+              icon === "phone" ? 
+              <a href="tel:+3670-338-4734">{text}</a> : 
+              <h5>{text}</h5>
+            }
         </div>
     </div>
   )

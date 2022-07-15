@@ -88,10 +88,18 @@
     font-size: 16px;
 }
 
-.landingContent .landingForm button {
+.landingContent .landingForm .landingFormButtons {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    width: 80%;
+}
+
+.landingContent .landingForm .landingFormButtons .callMe {
     background-color: #34b74a;
     height: 60px;
-    width: 80%;
+    width: 100%;
+    padding: 5px;
     font-size: 18px;
     font-weight: 600;
     color: #fff;
@@ -99,7 +107,11 @@
     transition: 0.5s;
 }
 
-.landingContent .landingForm button:hover {
+.landingContent .landingForm .landingFormButtons .makeCall {
+    display: none;
+}
+
+.landingContent .landingForm .landingFormButtons .callMe:hover, .landingContent .landingForm .landingFormButtons .makeCall:hover {
     background-color: #308f3f;
 }
 
@@ -128,9 +140,24 @@
         height: 60px;
     }
     
-    .landingContent .landingForm button {
-        height: 60px;
+    .landingContent .landingForm .landingFormButtons .callMe {
+        width: 50%;
         font-size: 16px;
+    }
+
+    .landingContent .landingForm .landingFormButtons .makeCall {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #34b74a;
+        height: 60px;
+        width: 50%;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        border-radius: 10px;
+        transition: 0.5s;
     }
 
 }
@@ -155,11 +182,11 @@
         height: 50px;
     }
     
-    .landingContent .landingForm button {
+    .landingContent .landingForm .landingFormButtons .callMe, .landingContent .landingForm .landingFormButtons .makeCall {
         height: 50px;
         font-size: 14px;
     }
-    
+
     .landingContent .landingForm .landingFormCheckbox label {
         font-size: 13px;
     }

@@ -65,7 +65,7 @@ function LandingForm() {
                 })
             }
         },
-        [formSubmitted]
+        [formSubmitted, formValue.district, formValue.location, formValue.name, formValue.phone, formValue.service]
     )
 
     return (
@@ -96,7 +96,10 @@ function LandingForm() {
                     <input type="checkbox" name="privacyPolicy" id="privacyPolicy" checked={formValue.privacyPolicy} onChange={handleChange} required />
                     <label htmlFor="privacyPolicy">Elfogadom az <a href='/adatvedelmi' target="_blank" className='linkToPrivacyPolicy'>adatvédelmi nyilatkozatot</a>.</label>
                 </div>
-                <button>Visszahívást kérek!</button>
+                <div className='landingFormButtons'>
+                    <button className='callMe'>Visszahívást kérek!</button>
+                    <a href="tel:+3670-338-4734" className='makeCall'>Felhívom!</a>
+                </div>
             </form> 
         : (!mailSent && animationStarted) ?
             <form className='landingForm'>

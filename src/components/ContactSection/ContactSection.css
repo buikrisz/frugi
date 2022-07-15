@@ -50,7 +50,7 @@
     font-weight: 800;
 }
 
-#kapcsolat .contactInfo .contactInfoCard h5 {
+#kapcsolat .contactInfo .contactInfoCard h5, #kapcsolat .contactInfo .contactInfoCard a {
     font-size: 16px;
     font-weight: 500;
 }
@@ -204,7 +204,7 @@
         font-size: 18px;
     }
     
-    #kapcsolat .contactInfo .contactInfoCard h5 {
+    #kapcsolat .contactInfo .contactInfoCard h5, #kapcsolat .contactInfo .contactInfoCard a {
         font-size: 12px;
     }
 }
@@ -244,7 +244,7 @@
         font-size: 14px;
     }
     
-    #kapcsolat .contactInfo .contactInfoCard h5 {
+    #kapcsolat .contactInfo .contactInfoCard h5, #kapcsolat .contactInfo .contactInfoCard a {
         font-size: 10px;
     }
 
