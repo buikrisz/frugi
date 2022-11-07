@@ -1,153 +1,169 @@
 /* CSS reset start */
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-    background: transparent;
-    font-family: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 a img {
-    border: none;
+  border: none;
 }
 
 button,
 a {
-    cursor: pointer;
-    color: inherit;
+  cursor: pointer;
+  color: inherit;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 button,
 textarea,
 select {
-    appearance: none !important;
-    border-radius: 0;
+  appearance: none !important;
+  border-radius: 0;
 }
 
-ol, ul, li {
-    list-style:none;display:block;
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
 }
 
 /* CSS reset end */
 
 #root {
-    min-height: 100vh;
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.cookieText {
+  font-size: 14px;
+}
+
+.cookieLink {
+  text-decoration: underline;
+  color: #9f9fc7;
+}
+
+.cookieLink:hover {
+  color: #ffffff;
 }
 
 .tempText {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .pdf {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    bottom: 10px;
-    left: 10px;
-    height: 60px;
-    width: 60px;
-    box-shadow: 0px 0px 10px 0px #7d7d7d;
-    border-radius: 50%;
-    transition: 0.5s;
-    z-index: 11;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  bottom: 10px;
+  left: 10px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0px 0px 10px 0px #7d7d7d;
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: 11;
 }
 
 .pdf:hover {
-    box-shadow: 0px 0px 10px 0px #010252;
+  box-shadow: 0px 0px 10px 0px #010252;
 }
 
 .pdfIcon {
-    height: 35px;
-    width: 35px;
-    color: #010252;
+  height: 35px;
+  width: 35px;
+  color: #010252;
 }
 
 /*Docoments page*/
 .documentsContent {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 /*Form submit animation*/
 
 .loader {
-    width: 120px;
-    height: 120px;
-    transform: rotate(-90deg);
-    stroke-linecap: round;
-    stroke-width: 4;
-    fill: none;
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+  stroke-linecap: round;
+  stroke-width: 4;
+  fill: none;
 }
 
 .internal-circle,
 .external-circle {
-    stroke: #010252;
-    stroke-dashoffset: 0;
-    transform-origin: center;
+  stroke: #010252;
+  stroke-dashoffset: 0;
+  transform-origin: center;
 }
 
 .internal-circle {
-    stroke-dasharray: 187;
-    animation: internal 1s ease-in-out infinite;
-    opacity: .4;
+  stroke-dasharray: 187;
+  animation: internal 1s ease-in-out infinite;
+  opacity: 0.4;
 }
 
 .external-circle {
-    stroke-dasharray: 312;
-    animation: external 1s linear infinite;
-    opacity: .9;
+  stroke-dasharray: 312;
+  animation: external 1s linear infinite;
+  opacity: 0.9;
 }
 
 @keyframes internal {
-    0% {
-      stroke-dashoffset: 187;
-    }
-    25% {
-      stroke-dashoffset: 80;
-    }
-    100% {
-      stroke-dashoffset: 187;
-      transform: rotate(360deg);
-    }
+  0% {
+    stroke-dashoffset: 187;
+  }
+  25% {
+    stroke-dashoffset: 80;
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(360deg);
+  }
 }
-  
+
 @keyframes external {
-    0% {
-      stroke-dashoffset: 312;
-      transform: rotate(70deg);
-    }
-    60% {
-      stroke-dashoffset: -312;
-    }
-    100% {
-      stroke-dashoffset: -312;
-      transform: rotate(450deg);
-    }
+  0% {
+    stroke-dashoffset: 312;
+    transform: rotate(70deg);
+  }
+  60% {
+    stroke-dashoffset: -312;
+  }
+  100% {
+    stroke-dashoffset: -312;
+    transform: rotate(450deg);
+  }
 }
 
 @media (max-width: 450px) {
-    .pdf {
-        height: 50px;
-        width: 50px;
-    }
+  .pdf {
+    height: 50px;
+    width: 50px;
+  }
 
-    .pdfIcon {
-        height: 25px;
-        width: 25px;
-    }
+  .pdfIcon {
+    height: 25px;
+    width: 25px;
+  }
 }
