@@ -6,8 +6,16 @@ import CookieConsent from "react-cookie-consent";
 
 // Google Analytics tracking setup
 import ReactGA from "react-ga";
+import TagManager from "react-gtm-module";
+
 const TRACKING_ID = "UA-228937825-1";
 ReactGA.initialize(TRACKING_ID);
+
+const tagManagerArgs = {
+  gtmId: "GTM-PJM5LLM",
+};
+
+TagManager.initialize(tagManagerArgs);
 
 function App() {
   useEffect(() => {
