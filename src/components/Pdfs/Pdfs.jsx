@@ -14,7 +14,7 @@ import protectr_forte_rovarirto from "../../data/PROTECTr_Forte_rovarirto_porozo
 import biopren_6_agyipoloska from "../../data/BIOPREN_6_EC_agyi_poloska-es_bolhairto_koncentratum_hu_v7.pdf";
 import deltasect from "../../data/Deltasect_HU4.pdf";
 import pesguard_koncentratum from "../../data/PESGUARD-B_koncentratum_MSDS_3v_160601.pdf";
-import msds_aquapy_rovarirto from "../../data/msds-Aquapy-Rovarirto-koncentratum-CLP-11789.pdf";
+import pyregreen_koncentratum from "../../data/Pyregreen_rovairto_koncentratum_MSDS.pdf";
 import dk_koncentratum from "../../data/Dk-10.2-Rovarirto-Koncentratum_hu_v4.pdf";
 import magnum_hangya from "../../data/Magnum_hangyairto_gel_MSDS_HU3.pdf";
 import { PdfGroup } from "./PdfGroup";
@@ -23,7 +23,7 @@ function Pdfs({ setShowPdfs }) {
   const [selected, setSelected] = useState("");
 
   const data = {
-    0: {
+    biopren: {
       brand: "BIOPREN",
       documents: [
         {
@@ -44,17 +44,7 @@ function Pdfs({ setShowPdfs }) {
         },
       ],
     },
-    1: {
-      brand: "GOKILAHT",
-      documents: [
-        {
-          displayName: "Gokilaht 10MC rovarirtó koncentrátum",
-          downloadName: "Gokilaht_10MC_rovarirto_koncentratum_hu_v1",
-          href: gohkilaht,
-        },
-      ],
-    },
-    2: {
+    peststop: {
       brand: "PESTSTOP",
       documents: [
         {
@@ -69,7 +59,7 @@ function Pdfs({ setShowPdfs }) {
         },
       ],
     },
-    3: {
+    protect: {
       brand: "PROTECT",
       documents: [
         {
@@ -89,7 +79,7 @@ function Pdfs({ setShowPdfs }) {
         },
       ],
     },
-    4: {
+    antivespe: {
       brand: "ANTIVESPE",
       documents: [
         {
@@ -99,7 +89,7 @@ function Pdfs({ setShowPdfs }) {
         },
       ],
     },
-    5: {
+    bombex_farumy: {
       brand: "BOMBEX FARUMY",
       documents: [
         {
@@ -109,7 +99,7 @@ function Pdfs({ setShowPdfs }) {
         },
       ],
     },
-    6: {
+    deltasect: {
       brand: "DELTASECT",
       documents: [
         {
@@ -119,7 +109,7 @@ function Pdfs({ setShowPdfs }) {
         },
       ],
     },
-    7: {
+    pesguard: {
       brand: "PESGUARD",
       documents: [
         {
@@ -129,17 +119,7 @@ function Pdfs({ setShowPdfs }) {
         },
       ],
     },
-    8: {
-      brand: "AQUAPY",
-      documents: [
-        {
-          displayName: "MSDS Aquapy Rovarirtó koncentrátum",
-          downloadName: "msds-Aquapy-Rovarirto-koncentratum-CLP-11789",
-          href: msds_aquapy_rovarirto,
-        },
-      ],
-    },
-    9: {
+    draker: {
       brand: "DRAKER",
       documents: [
         {
@@ -149,7 +129,7 @@ function Pdfs({ setShowPdfs }) {
         },
       ],
     },
-    10: {
+    cleankill: {
       brand: "CLEANKILL",
       documents: [
         {
@@ -159,13 +139,23 @@ function Pdfs({ setShowPdfs }) {
         },
       ],
     },
-    11: {
+    magnum: {
       brand: "MAGNUM",
       documents: [
         {
           displayName: "Magnum hangyairtó gél MSDS HU3",
           downloadName: "Magnum_hangyairtó_gél_MSDS_HU3",
           href: magnum_hangya,
+        },
+      ],
+    },
+    pyregreen: {
+      brand: "PYREGREEN",
+      documents: [
+        {
+          displayName: "Pyregreen rovairtó koncentrátum MSDS",
+          downloadName: "Pyregreen_rovairto_koncentratum_MSDS",
+          href: pyregreen_koncentratum,
         },
       ],
     },
