@@ -1,6 +1,6 @@
 import "./PestLandingSection.css";
-import { LandingForm } from "..";
 import image from "../../images/pest_control.png";
+import { ContactInfoCard } from "..";
 
 function LandingSection() {
   return (
@@ -18,7 +18,11 @@ function LandingSection() {
           </div>
           <img src={image} alt="Pest Control" />
         </div>
-        <LandingForm />
+        <ContactInfoCard
+          icon="phone"
+          title="Hívjon fel"
+          text="+36-70-338-4734"
+        />
       </div>
     </section>
   );
